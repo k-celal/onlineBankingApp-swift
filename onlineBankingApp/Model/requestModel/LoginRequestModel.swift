@@ -10,4 +10,9 @@ import Foundation
 struct LoginRequestModel: Codable {
     let email: String
     let password: String
+    
+    enum CodingKeys: String, CodingKey {
+        case email = "email"
+        case password = "password"
+    }
 }

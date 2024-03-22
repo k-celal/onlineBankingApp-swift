@@ -16,7 +16,7 @@ struct RegisterRequestModel: Codable {
     enum CodingKeys: String, CodingKey {
         case firstName = "first_name"
         case lastName = "last_name"
-        case email
-        case password
+        case email = "email"
+        case password = "password"
     }
 }
