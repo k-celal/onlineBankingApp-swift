@@ -111,6 +111,80 @@
             </objects>
             <point key="canvasLocation" x="727.48091603053433" y="374.64788732394368"/>
         </scene>
+        <!--registerViewController-->
+        <scene sceneID="XbL-uq-0Nj">
+            <objects>
+                <viewController title="registerViewController" id="nsb-gN-waF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GC5-UU-lBc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Posta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a6B-wD-V0k">
+                                <rect key="frame" x="79" y="501" width="234" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Soyisim" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zPy-dO-vj0">
+                                <rect key="frame" x="79" y="454" width="234" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İsim" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RoL-En-jCY">
+                                <rect key="frame" x="79" y="407" width="234" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sifre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NUS-Z7-Nna">
+                                <rect key="frame" x="79" y="551" width="234" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ynr-KD-5Cy">
+                                <rect key="frame" x="10" y="59" width="373" height="214"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="214" id="ZaB-Tu-jLE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pe2-3H-jUT">
+                                <rect key="frame" x="156" y="626" width="83" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Kayıt Ol"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CB Bank: Geleceği Şekillendiren İnavasyon ve Vizyon Bankası" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RS3-nR-VGj">
+                                <rect key="frame" x="40" y="298" width="314" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CDe-d3-ubZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RoL-En-jCY" firstAttribute="top" secondItem="ynr-KD-5Cy" secondAttribute="bottom" constant="134" id="4AH-u3-xtS"/>
+                            <constraint firstItem="zPy-dO-vj0" firstAttribute="leading" secondItem="CDe-d3-ubZ" secondAttribute="leading" constant="79" id="7g2-bN-r4M"/>
+                            <constraint firstItem="a6B-wD-V0k" firstAttribute="trailing" secondItem="zPy-dO-vj0" secondAttribute="trailing" id="E2c-3S-wX5"/>
+                            <constraint firstItem="ynr-KD-5Cy" firstAttribute="top" secondItem="CDe-d3-ubZ" secondAttribute="top" id="FTv-sU-rye"/>
+                            <constraint firstItem="NUS-Z7-Nna" firstAttribute="top" secondItem="a6B-wD-V0k" secondAttribute="bottom" constant="16" id="Hyo-fr-DRy"/>
+                            <constraint firstItem="ynr-KD-5Cy" firstAttribute="centerX" secondItem="RoL-En-jCY" secondAttribute="centerX" id="QFU-zp-UtK"/>
+                            <constraint firstItem="a6B-wD-V0k" firstAttribute="top" secondItem="zPy-dO-vj0" secondAttribute="bottom" constant="13" id="Vau-f0-vcr"/>
+                            <constraint firstItem="a6B-wD-V0k" firstAttribute="trailing" secondItem="NUS-Z7-Nna" secondAttribute="trailing" id="cMM-rF-cLq"/>
+                            <constraint firstItem="ynr-KD-5Cy" firstAttribute="centerX" secondItem="zPy-dO-vj0" secondAttribute="centerX" id="cfM-oT-azQ"/>
+                            <constraint firstItem="ynr-KD-5Cy" firstAttribute="centerX" secondItem="GC5-UU-lBc" secondAttribute="centerX" id="erv-WF-NXs"/>
+                            <constraint firstItem="zPy-dO-vj0" firstAttribute="leading" secondItem="RoL-En-jCY" secondAttribute="leading" id="g6d-E9-eoi"/>
+                            <constraint firstItem="a6B-wD-V0k" firstAttribute="leading" secondItem="zPy-dO-vj0" secondAttribute="leading" id="geU-xZ-usY"/>
+                            <constraint firstItem="zPy-dO-vj0" firstAttribute="top" secondItem="RoL-En-jCY" secondAttribute="bottom" constant="13" id="jEq-Lg-1fb"/>
+                            <constraint firstItem="a6B-wD-V0k" firstAttribute="leading" secondItem="NUS-Z7-Nna" secondAttribute="leading" id="m1K-kU-wit"/>
+                            <constraint firstItem="ynr-KD-5Cy" firstAttribute="leading" secondItem="CDe-d3-ubZ" secondAttribute="leading" constant="10" id="mec-z4-daD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G67-JX-Hel" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641.9847328244275" y="676.76056338028172"/>
+        </scene>
     </scenes>
     <resources>
         <image name="financial_data" width="64" height="64"/>
