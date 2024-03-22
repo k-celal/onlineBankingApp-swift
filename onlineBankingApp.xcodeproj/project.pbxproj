@@ -19,6 +19,8 @@
 		C9A8C2852BAE05D7004761B8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2842BAE05D7004761B8 /* UserModel.swift */; };
 		C9A8C2872BAE060C004761B8 /* AccounModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2862BAE060C004761B8 /* AccounModel.swift */; };
 		C9A8C2892BAE0666004761B8 /* AccessTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2882BAE0666004761B8 /* AccessTokenModel.swift */; };
+		C9A8C28B2BAE06F3004761B8 /* LoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C28A2BAE06F3004761B8 /* LoginRequestModel.swift */; };
+		C9A8C28D2BAE0709004761B8 /* RegisterRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C28C2BAE0709004761B8 /* RegisterRequestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		C9A8C2842BAE05D7004761B8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		C9A8C2862BAE060C004761B8 /* AccounModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccounModel.swift; sourceTree = "<group>"; };
 		C9A8C2882BAE0666004761B8 /* AccessTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenModel.swift; sourceTree = "<group>"; };
+		C9A8C28A2BAE06F3004761B8 /* LoginRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestModel.swift; sourceTree = "<group>"; };
+		C9A8C28C2BAE0709004761B8 /* RegisterRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,8 @@
 		C9A8C2822BAE05AC004761B8 /* requestModel */ = {
 			isa = PBXGroup;
 			children = (
+				C9A8C28A2BAE06F3004761B8 /* LoginRequestModel.swift */,
+				C9A8C28C2BAE0709004761B8 /* RegisterRequestModel.swift */,
 			);
 			path = requestModel;
 			sourceTree = "<group>";
@@ -311,8 +317,10 @@
 				C9A8C2542BADBF72004761B8 /* ViewController.swift in Sources */,
 				C9A8C2502BADBF72004761B8 /* AppDelegate.swift in Sources */,
 				C9A8C2852BAE05D7004761B8 /* UserModel.swift in Sources */,
+				C9A8C28D2BAE0709004761B8 /* RegisterRequestModel.swift in Sources */,
 				C9A8C2522BADBF72004761B8 /* SceneDelegate.swift in Sources */,
 				C9A8C2892BAE0666004761B8 /* AccessTokenModel.swift in Sources */,
+				C9A8C28B2BAE06F3004761B8 /* LoginRequestModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 struct UserModel {
     let userId: String
     let firstName: String
