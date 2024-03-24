@@ -26,6 +26,7 @@
 		C9A8C2962BAE09C9004761B8 /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2952BAE09C9004761B8 /* LocalStorageManager.swift */; };
 		C9A8C2992BAE0A0E004761B8 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2982BAE0A0E004761B8 /* ApiClient.swift */; };
 		C9A8C29C2BAE0A46004761B8 /* ApiAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C29B2BAE0A46004761B8 /* ApiAuthService.swift */; };
+		C9A8C29E2BAEE28E004761B8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C29D2BAEE28E004761B8 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		C9A8C2952BAE09C9004761B8 /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
 		C9A8C2982BAE0A0E004761B8 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		C9A8C29B2BAE0A46004761B8 /* ApiAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAuthService.swift; sourceTree = "<group>"; };
+		C9A8C29D2BAEE28E004761B8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A8C2532BADBF72004761B8 /* ViewController.swift */,
+				C9A8C29D2BAEE28E004761B8 /* LoginViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A8C29E2BAEE28E004761B8 /* LoginViewController.swift in Sources */,
 				C9A8C2872BAE060C004761B8 /* AccounModel.swift in Sources */,
 				C9A8C2542BADBF72004761B8 /* ViewController.swift in Sources */,
 				C9A8C2962BAE09C9004761B8 /* LocalStorageManager.swift in Sources */,
