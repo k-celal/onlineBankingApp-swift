@@ -13,6 +13,6 @@ struct AccessTokenModel: Codable {
 
     enum CodingKeys: String, CodingKey {
         case accessToken = "access_token"
-        case message
+        case message = "message"
     }
 }

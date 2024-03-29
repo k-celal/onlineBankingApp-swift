@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C99594CB2BB0302900C1C300 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99594CA2BB0302900C1C300 /* RegisterViewController.swift */; };
+		C99594CD2BB031E700C1C300 /* RegisterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */; };
 		C9A8C2502BADBF72004761B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C24F2BADBF72004761B8 /* AppDelegate.swift */; };
 		C9A8C2522BADBF72004761B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2512BADBF72004761B8 /* SceneDelegate.swift */; };
 		C9A8C2542BADBF72004761B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2532BADBF72004761B8 /* ViewController.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C99594CA2BB0302900C1C300 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponseModel.swift; sourceTree = "<group>"; };
 		C9A8C24C2BADBF72004761B8 /* onlineBankingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onlineBankingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A8C24F2BADBF72004761B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A8C2512BADBF72004761B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 			children = (
 				C9A8C2532BADBF72004761B8 /* ViewController.swift */,
 				C9A8C29D2BAEE28E004761B8 /* LoginViewController.swift */,
+				C99594CA2BB0302900C1C300 /* RegisterViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 		C9A8C2832BAE05B4004761B8 /* responseModel */ = {
 			isa = PBXGroup;
 			children = (
+				C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */,
 			);
 			path = responseModel;
 			sourceTree = "<group>";
@@ -377,10 +383,12 @@
 				C9A8C2962BAE09C9004761B8 /* LocalStorageManager.swift in Sources */,
 				C9A8C2502BADBF72004761B8 /* AppDelegate.swift in Sources */,
 				C9A8C2852BAE05D7004761B8 /* UserModel.swift in Sources */,
+				C99594CB2BB0302900C1C300 /* RegisterViewController.swift in Sources */,
 				C9A8C28D2BAE0709004761B8 /* RegisterRequestModel.swift in Sources */,
 				C9A8C29C2BAE0A46004761B8 /* ApiAuthService.swift in Sources */,
 				C9A8C2902BAE0895004761B8 /* ApiServiceInterface.swift in Sources */,
 				C9A8C2942BAE09A4004761B8 /* ApiAuthException.swift in Sources */,
+				C99594CD2BB031E700C1C300 /* RegisterResponseModel.swift in Sources */,
 				C9A8C2522BADBF72004761B8 /* SceneDelegate.swift in Sources */,
 				C9A8C2892BAE0666004761B8 /* AccessTokenModel.swift in Sources */,
 				C9A8C28B2BAE06F3004761B8 /* LoginRequestModel.swift in Sources */,

@@ -1,11 +1,3 @@
-//
-//  LoginViewController.swift
-//  onlineBankingApp
-//
-//  Created by Celal Karahan on 23.03.2024.
-//
-
-import Foundation
 import UIKit
 
 class LoginViewController: UIViewController {
@@ -13,15 +5,11 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
-    
+    @IBOutlet weak var financialDataButton: UIButton! // Financial Data butonu eklendi
     let apiAuthService = ApiAuthService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    @IBAction func signUpButtonTapped(_ sender: Any) {
-        //navigateToRegister()
     }
     
     @IBAction func loginButtonTapped(_ sender: Any) {
@@ -29,6 +17,11 @@ class LoginViewController: UIViewController {
             return
         }
         login(email: email, password: password)
+    }
+    
+    @IBAction func financialDataButtonTapped(_ sender: Any) {
+        // Financial Data butonuna tıklandığında yapılacak işlemler
+        navigateToFinancialData() // Financial Data ViewController'a git
     }
     
     func login(email: String, password: String) {
@@ -67,4 +60,15 @@ class LoginViewController: UIViewController {
             toast.dismiss(animated: true)
         }
     }
+    
+    // Financial Data ViewController'a geçiş fonksiyonu
+    func navigateToFinancialData() {
+        // Financial Data ViewController'ı instantiate ederek geçiş yapabilirsiniz
+        // Örnek:
+        // let financialDataVC = FinancialDataViewController()
+        // self.present(financialDataVC, animated: true, completion: nil)
+    }
+    
+
+
 }
