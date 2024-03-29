@@ -63,10 +63,7 @@ class LoginViewController: UIViewController {
     
     // Financial Data ViewController'a geçiş fonksiyonu
     func navigateToFinancialData() {
-        // Financial Data ViewController'ı instantiate ederek geçiş yapabilirsiniz
-        // Örnek:
-        // let financialDataVC = FinancialDataViewController()
-        // self.present(financialDataVC, animated: true, completion: nil)
+
     }
     
 

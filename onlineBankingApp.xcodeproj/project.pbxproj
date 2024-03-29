@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C94804022BB7019900562D29 /* ExchangeRatesApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804012BB7019900562D29 /* ExchangeRatesApiClient.swift */; };
+		C94804042BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804032BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift */; };
+		C94804062BB702DC00562D29 /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804052BB702DC00562D29 /* CurrencyResponse.swift */; };
+		C94804082BB7053200562D29 /* CurrencyDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804072BB7053200562D29 /* CurrencyDisplayViewController.swift */; };
 		C99594CB2BB0302900C1C300 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99594CA2BB0302900C1C300 /* RegisterViewController.swift */; };
 		C99594CD2BB031E700C1C300 /* RegisterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */; };
 		C9A8C2502BADBF72004761B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C24F2BADBF72004761B8 /* AppDelegate.swift */; };
@@ -49,6 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C94804012BB7019900562D29 /* ExchangeRatesApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesApiClient.swift; sourceTree = "<group>"; };
+		C94804032BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesApiServiceInterface.swift; sourceTree = "<group>"; };
+		C94804052BB702DC00562D29 /* CurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResponse.swift; sourceTree = "<group>"; };
+		C94804072BB7053200562D29 /* CurrencyDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDisplayViewController.swift; sourceTree = "<group>"; };
 		C99594CA2BB0302900C1C300 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponseModel.swift; sourceTree = "<group>"; };
 		C9A8C24C2BADBF72004761B8 /* onlineBankingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onlineBankingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +170,7 @@
 				C9A8C2532BADBF72004761B8 /* ViewController.swift */,
 				C9A8C29D2BAEE28E004761B8 /* LoginViewController.swift */,
 				C99594CA2BB0302900C1C300 /* RegisterViewController.swift */,
+				C94804072BB7053200562D29 /* CurrencyDisplayViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */,
+				C94804052BB702DC00562D29 /* CurrencyResponse.swift */,
 			);
 			path = responseModel;
 			sourceTree = "<group>";
@@ -209,6 +219,7 @@
 				C9A8C29A2BAE0A31004761B8 /* Service */,
 				C9A8C2972BAE09FF004761B8 /* ApiClient */,
 				C9A8C28F2BAE0895004761B8 /* ApiServiceInterface.swift */,
+				C94804032BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -234,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A8C2982BAE0A0E004761B8 /* ApiClient.swift */,
+				C94804012BB7019900562D29 /* ExchangeRatesApiClient.swift */,
 			);
 			path = ApiClient;
 			sourceTree = "<group>";
@@ -379,13 +391,16 @@
 			files = (
 				C9A8C29E2BAEE28E004761B8 /* LoginViewController.swift in Sources */,
 				C9A8C2872BAE060C004761B8 /* AccounModel.swift in Sources */,
+				C94804082BB7053200562D29 /* CurrencyDisplayViewController.swift in Sources */,
 				C9A8C2542BADBF72004761B8 /* ViewController.swift in Sources */,
 				C9A8C2962BAE09C9004761B8 /* LocalStorageManager.swift in Sources */,
 				C9A8C2502BADBF72004761B8 /* AppDelegate.swift in Sources */,
 				C9A8C2852BAE05D7004761B8 /* UserModel.swift in Sources */,
+				C94804062BB702DC00562D29 /* CurrencyResponse.swift in Sources */,
 				C99594CB2BB0302900C1C300 /* RegisterViewController.swift in Sources */,
 				C9A8C28D2BAE0709004761B8 /* RegisterRequestModel.swift in Sources */,
 				C9A8C29C2BAE0A46004761B8 /* ApiAuthService.swift in Sources */,
+				C94804042BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift in Sources */,
 				C9A8C2902BAE0895004761B8 /* ApiServiceInterface.swift in Sources */,
 				C9A8C2942BAE09A4004761B8 /* ApiAuthException.swift in Sources */,
 				C99594CD2BB031E700C1C300 /* RegisterResponseModel.swift in Sources */,
@@ -393,6 +408,7 @@
 				C9A8C2892BAE0666004761B8 /* AccessTokenModel.swift in Sources */,
 				C9A8C28B2BAE06F3004761B8 /* LoginRequestModel.swift in Sources */,
 				C9A8C2992BAE0A0E004761B8 /* ApiClient.swift in Sources */,
+				C94804022BB7019900562D29 /* ExchangeRatesApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

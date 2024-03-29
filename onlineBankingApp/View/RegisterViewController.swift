@@ -56,7 +56,7 @@ class RegisterViewController: UIViewController {
     }
 
     func handleRegistrationFailure(error: Error) {
-        showToast(message: "Registration failed. Please try again.") 
+        showToast(message: "Registration failed. Please try again.")
         print("Registration error: \(error.localizedDescription)")
     }
 
