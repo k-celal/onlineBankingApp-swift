@@ -201,6 +201,7 @@
                         <outlet property="emailTextField" destination="iC1-O1-ung" id="6uF-Mw-uiP"/>
                         <outlet property="loginButton" destination="6sO-oO-3Tx" id="Bqc-Sk-uXb"/>
                         <outlet property="passwordTextField" destination="kzg-M7-ZYR" id="zFr-G1-Paj"/>
+                        <segue destination="jph-eX-451" kind="presentation" identifier="loginToMenuSegue" modalPresentationStyle="fullScreen" id="LIQ-8m-2Dn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wfc-er-OFT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -297,9 +298,25 @@
             </objects>
             <point key="canvasLocation" x="1578" y="-273"/>
         </scene>
+        <!--MenuViewController-->
+        <scene sceneID="CUq-Ga-7qz">
+            <objects>
+                <viewController id="jph-eX-451" userLabel="MenuViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QY1-2x-7ls">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Rhg-R3-Qfh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Ez-Px-je7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0UI-At-l2i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2395" y="375"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KMd-3I-VYn"/>
+        <segue reference="btL-X1-FPK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="aud" width="512" height="512"/>

@@ -85,4 +85,37 @@ class ApiAuthService {
                 }
             }.resume()
         }
+    static func logout(completion: @escaping (Error?) -> Void) {
+            guard let accessToken = localStorageManager.getAccessToken() else {
+                let error = NSError(domain: "AccessTokenNotFound", code: 0, userInfo: [NSLocalizedDescriptionKey: "Access token not found"])
+                completion(error)
+                return
+            }
+            
+            let baseURL = "http://127.0.0.1:8070" // API'nin temel URL'si
+            let url = "\(baseURL)/logout"
+            
+            var request = URLRequest(url: URL(string: url)!)
+            request.httpMethod = "POST"
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
+            
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                if let error = error {
+                    print("Request Failure: \(error.localizedDescription)")
+                    completion(error)
+                    return
+                }
+                
+                if let httpResponse = response as? HTTPURLResponse, !(200...299).contains(httpResponse.statusCode) {
+                    print("HTTP Response Error: \(httpResponse.statusCode)")
+                    completion(NSError(domain: "HTTPResponseError", code: httpResponse.statusCode, userInfo: nil))
+                    return
+                }
+                
+                print("Logout Successful.")
+                localStorageManager.removeAccessToken()
+                completion(nil)
+            }.resume()
+        }
 }

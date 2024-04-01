@@ -19,11 +19,6 @@ class LoginViewController: UIViewController {
         login(email: email, password: password)
     }
     
-    @IBAction func financialDataButtonTapped(_ sender: Any) {
-        // Financial Data butonuna tıklandığında yapılacak işlemler
-        navigateToFinancialData() // Financial Data ViewController'a git
-    }
-    
     func login(email: String, password: String) {
         ApiAuthService.login(loginRequestModel: LoginRequestModel(email: email, password: password)) { result in
             switch result {
@@ -41,7 +36,8 @@ class LoginViewController: UIViewController {
     
     func handleLoginSuccess() {
         showToast(message: "Login successful")
-        //navigateToDashboard()
+        self.performSegue(withIdentifier: "loginToMenuSegue", sender: nil)
+        print("yönlendirme")
     }
     
     func handleLoginFailure(error: Error) {
@@ -53,19 +49,13 @@ class LoginViewController: UIViewController {
         print("Login error: \(error.localizedDescription)")
     }
     
-    func showToast(message: String) {
+    func showToast(message: String, completion: (() -> Void)? = nil) {
         let toast = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         present(toast, animated: true)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            toast.dismiss(animated: true)
+            toast.dismiss(animated: true) {
+                completion?() // completion bloğunu kontrol ediyoruz ve varsa çağırıyoruz
+            }
         }
     }
-    
-    // Financial Data ViewController'a geçiş fonksiyonu
-    func navigateToFinancialData() {
-
-    }
-    
-
-
 }
