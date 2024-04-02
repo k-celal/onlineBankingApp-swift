@@ -10,43 +10,32 @@ import UIKit
 
 class MenuViewController: BaseViewController {
     
-    @IBOutlet weak var viewDashboardButton: UIButton!
-    @IBOutlet weak var viewCreateAccountButton: UIButton!
-    @IBOutlet weak var paymentHistoryButton: UIButton!
-    @IBOutlet weak var transferHistoryButton: UIButton!
-    
+    @IBOutlet weak var viewDashboard: UIButton!
+
+    @IBOutlet weak var paymentHistory: UIButton!
+    @IBOutlet weak var transactionHistory: UIButton!
+    @IBOutlet weak var createAccount: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Toolbar ayarlamalar
         view.addSubview(toolbar)
-        
-//        // Dashboard sayfasına yönlendirme butonu
-//        viewDashboardButton.addTarget(self, action: #selector(viewDashboard), for: .touchUpInside)
-//        
-//        // Hesap oluşturma sayfasına yönlendirme butonu
-//        viewCreateAccountButton.addTarget(self, action: #selector(viewCreateAccount), for: .touchUpInside)
-//        
-//        // Ödeme Geçmişi sayfasına yönlendirme butonu
-//        paymentHistoryButton.addTarget(self, action: #selector(paymentHistory), for: .touchUpInside)
-//        
-//        // Transfer Geçmişi sayfasına yönlendirme butonu
-//        transferHistoryButton.addTarget(self, action: #selector(transferHistory), for: .touchUpInside)
     }
     
-    @objc func viewDashboard() {
-        
+    @IBAction func viewDashboardTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "menuToDashboardSegue", sender: nil)
     }
     
-    @objc func viewCreateAccount() {
-
+    @IBAction func paymentHistoryTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "menuToPaymentHistSegue", sender: nil)
     }
     
-    @objc func paymentHistory() {
-    
+    @IBAction func transactionHistoryTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "menuToTransactionHistSegue", sender: nil)
     }
     
-    @objc func transferHistory() {
-    
+    @IBAction func createAccountTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "menuToCreateAccSegue", sender: nil)
     }
 }
+
