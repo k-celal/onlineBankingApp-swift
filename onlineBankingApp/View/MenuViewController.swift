@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class MenuViewController: UIViewController {
+class MenuViewController: BaseViewController {
     
     @IBOutlet weak var viewDashboardButton: UIButton!
     @IBOutlet weak var viewCreateAccountButton: UIButton!
@@ -18,24 +18,20 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Toolbar ayarlamaları
-        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 44))
-        toolbar.barTintColor = UIColor.systemBlue
-        toolbar.isTranslucent = false
-        toolbar.tintColor = UIColor.white
+        // Toolbar ayarlamalar
         view.addSubview(toolbar)
         
-        // Dashboard sayfasına yönlendirme butonu
-        viewDashboardButton.addTarget(self, action: #selector(viewDashboard), for: .touchUpInside)
-        
-        // Hesap oluşturma sayfasına yönlendirme butonu
-        viewCreateAccountButton.addTarget(self, action: #selector(viewCreateAccount), for: .touchUpInside)
-        
-        // Ödeme Geçmişi sayfasına yönlendirme butonu
-        paymentHistoryButton.addTarget(self, action: #selector(paymentHistory), for: .touchUpInside)
-        
-        // Transfer Geçmişi sayfasına yönlendirme butonu
-        transferHistoryButton.addTarget(self, action: #selector(transferHistory), for: .touchUpInside)
+//        // Dashboard sayfasına yönlendirme butonu
+//        viewDashboardButton.addTarget(self, action: #selector(viewDashboard), for: .touchUpInside)
+//        
+//        // Hesap oluşturma sayfasına yönlendirme butonu
+//        viewCreateAccountButton.addTarget(self, action: #selector(viewCreateAccount), for: .touchUpInside)
+//        
+//        // Ödeme Geçmişi sayfasına yönlendirme butonu
+//        paymentHistoryButton.addTarget(self, action: #selector(paymentHistory), for: .touchUpInside)
+//        
+//        // Transfer Geçmişi sayfasına yönlendirme butonu
+//        transferHistoryButton.addTarget(self, action: #selector(transferHistory), for: .touchUpInside)
     }
     
     @objc func viewDashboard() {

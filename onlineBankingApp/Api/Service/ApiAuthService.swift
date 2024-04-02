@@ -96,7 +96,7 @@ class ApiAuthService {
             let url = "\(baseURL)/logout"
             
             var request = URLRequest(url: URL(string: url)!)
-            request.httpMethod = "POST"
+            request.httpMethod = "GET"
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
             request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
             

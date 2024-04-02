@@ -35,9 +35,9 @@ class LoginViewController: UIViewController {
     }
     
     func handleLoginSuccess() {
-        showToast(message: "Login successful")
-        self.performSegue(withIdentifier: "loginToMenuSegue", sender: nil)
-        print("yönlendirme")
+        showToast(message: "Login successful") {
+            self.performSegue(withIdentifier: "loginToMenuSegue", sender: nil)
+        }
     }
     
     func handleLoginFailure(error: Error) {

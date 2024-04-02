@@ -21,7 +21,7 @@ class CurrencyDisplayViewController: UIViewController {
         
         // API key, base currency ve hedef currencies parametrelerini belirle
         // API key, base currency ve hedef currencies parametrelerini belirle
-                let apiKey = "your-api-key"
+                let apiKey = "fca_live_K4BWWsi9ONsX3hPyzn2xYl7ylQ6WsczT7tVsXAZe"
                 let baseCurrency = "USD"
                 let currencies = "EUR,TRY,JPY,GBP,AUD"
                 
