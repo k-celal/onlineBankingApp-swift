@@ -11,6 +11,7 @@
 		C94804042BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804032BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift */; };
 		C94804062BB702DC00562D29 /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804052BB702DC00562D29 /* CurrencyResponse.swift */; };
 		C94804082BB7053200562D29 /* CurrencyDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804072BB7053200562D29 /* CurrencyDisplayViewController.swift */; };
+		C98B57B12BC019E200657CEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98B57AE2BC019E200657CEF /* Main.storyboard */; };
 		C99594CB2BB0302900C1C300 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99594CA2BB0302900C1C300 /* RegisterViewController.swift */; };
 		C99594CD2BB031E700C1C300 /* RegisterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */; };
 		C99C27722BB8233400E34028 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C27712BB8233400E34028 /* BaseViewController.swift */; };
@@ -18,14 +19,13 @@
 		C9A8C2502BADBF72004761B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C24F2BADBF72004761B8 /* AppDelegate.swift */; };
 		C9A8C2522BADBF72004761B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2512BADBF72004761B8 /* SceneDelegate.swift */; };
 		C9A8C2542BADBF72004761B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2532BADBF72004761B8 /* ViewController.swift */; };
-		C9A8C2572BADBF72004761B8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C9A8C2562BADBF72004761B8 /* Base */; };
 		C9A8C2592BADBF75004761B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A8C2582BADBF75004761B8 /* Assets.xcassets */; };
 		C9A8C25C2BADBF75004761B8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C9A8C25B2BADBF75004761B8 /* Base */; };
 		C9A8C2672BADBF75004761B8 /* onlineBankingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2662BADBF75004761B8 /* onlineBankingAppTests.swift */; };
 		C9A8C2712BADBF75004761B8 /* onlineBankingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2702BADBF75004761B8 /* onlineBankingAppUITests.swift */; };
 		C9A8C2732BADBF75004761B8 /* onlineBankingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2722BADBF75004761B8 /* onlineBankingAppUITestsLaunchTests.swift */; };
 		C9A8C2852BAE05D7004761B8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2842BAE05D7004761B8 /* UserModel.swift */; };
-		C9A8C2872BAE060C004761B8 /* AccounModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2862BAE060C004761B8 /* AccounModel.swift */; };
+		C9A8C2872BAE060C004761B8 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2862BAE060C004761B8 /* AccountModel.swift */; };
 		C9A8C2892BAE0666004761B8 /* AccessTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2882BAE0666004761B8 /* AccessTokenModel.swift */; };
 		C9A8C28B2BAE06F3004761B8 /* LoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C28A2BAE06F3004761B8 /* LoginRequestModel.swift */; };
 		C9A8C28D2BAE0709004761B8 /* RegisterRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C28C2BAE0709004761B8 /* RegisterRequestModel.swift */; };
@@ -35,6 +35,11 @@
 		C9A8C2992BAE0A0E004761B8 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2982BAE0A0E004761B8 /* ApiClient.swift */; };
 		C9A8C29C2BAE0A46004761B8 /* ApiAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C29B2BAE0A46004761B8 /* ApiAuthService.swift */; };
 		C9A8C29E2BAEE28E004761B8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C29D2BAEE28E004761B8 /* LoginViewController.swift */; };
+		C9EEBF502BBC41A500A9C930 /* CreateAccountRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEBF4F2BBC41A500A9C930 /* CreateAccountRequestModel.swift */; };
+		C9EEBF522BBC420E00A9C930 /* ApiPostTransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEBF512BBC420E00A9C930 /* ApiPostTransactionService.swift */; };
+		C9EEBF542BBC439C00A9C930 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEBF532BBC439C00A9C930 /* AuthenticationError.swift */; };
+		C9EEBF562BBC43D800A9C930 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEBF552BBC43D800A9C930 /* NetworkError.swift */; };
+		C9EEBF582BBC44DC00A9C930 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEBF572BBC44DC00A9C930 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,7 @@
 		C94804032BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesApiServiceInterface.swift; sourceTree = "<group>"; };
 		C94804052BB702DC00562D29 /* CurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResponse.swift; sourceTree = "<group>"; };
 		C94804072BB7053200562D29 /* CurrencyDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDisplayViewController.swift; sourceTree = "<group>"; };
+		C98B57AD2BC019E200657CEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		C99594CA2BB0302900C1C300 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponseModel.swift; sourceTree = "<group>"; };
 		C99C27712BB8233400E34028 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +73,6 @@
 		C9A8C24F2BADBF72004761B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A8C2512BADBF72004761B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C9A8C2532BADBF72004761B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C9A8C2562BADBF72004761B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9A8C2582BADBF75004761B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9A8C25B2BADBF75004761B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9A8C25D2BADBF75004761B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,7 +82,7 @@
 		C9A8C2702BADBF75004761B8 /* onlineBankingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onlineBankingAppUITests.swift; sourceTree = "<group>"; };
 		C9A8C2722BADBF75004761B8 /* onlineBankingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onlineBankingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C9A8C2842BAE05D7004761B8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		C9A8C2862BAE060C004761B8 /* AccounModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccounModel.swift; sourceTree = "<group>"; };
+		C9A8C2862BAE060C004761B8 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		C9A8C2882BAE0666004761B8 /* AccessTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenModel.swift; sourceTree = "<group>"; };
 		C9A8C28A2BAE06F3004761B8 /* LoginRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestModel.swift; sourceTree = "<group>"; };
 		C9A8C28C2BAE0709004761B8 /* RegisterRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestModel.swift; sourceTree = "<group>"; };
@@ -87,6 +92,11 @@
 		C9A8C2982BAE0A0E004761B8 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		C9A8C29B2BAE0A46004761B8 /* ApiAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAuthService.swift; sourceTree = "<group>"; };
 		C9A8C29D2BAEE28E004761B8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C9EEBF4F2BBC41A500A9C930 /* CreateAccountRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequestModel.swift; sourceTree = "<group>"; };
+		C9EEBF512BBC420E00A9C930 /* ApiPostTransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPostTransactionService.swift; sourceTree = "<group>"; };
+		C9EEBF532BBC439C00A9C930 /* AuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
+		C9EEBF552BBC43D800A9C930 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C9EEBF572BBC44DC00A9C930 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +153,7 @@
 				C9A8C27F2BAE057E004761B8 /* View */,
 				C9A8C24F2BADBF72004761B8 /* AppDelegate.swift */,
 				C9A8C2512BADBF72004761B8 /* SceneDelegate.swift */,
-				C9A8C2552BADBF72004761B8 /* Main.storyboard */,
+				C98B57AE2BC019E200657CEF /* Main.storyboard */,
 				C9A8C2582BADBF75004761B8 /* Assets.xcassets */,
 				C9A8C25A2BADBF75004761B8 /* LaunchScreen.storyboard */,
 				C9A8C25D2BADBF75004761B8 /* Info.plist */,
@@ -177,6 +187,7 @@
 				C94804072BB7053200562D29 /* CurrencyDisplayViewController.swift */,
 				C99C27712BB8233400E34028 /* BaseViewController.swift */,
 				C99C27732BB8269400E34028 /* MenuViewController.swift */,
+				C9EEBF572BBC44DC00A9C930 /* CreateAccountViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,7 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A8C2842BAE05D7004761B8 /* UserModel.swift */,
-				C9A8C2862BAE060C004761B8 /* AccounModel.swift */,
+				C9A8C2862BAE060C004761B8 /* AccountModel.swift */,
 				C9A8C2882BAE0666004761B8 /* AccessTokenModel.swift */,
 			);
 			path = baseModel;
@@ -206,6 +217,7 @@
 			children = (
 				C9A8C28A2BAE06F3004761B8 /* LoginRequestModel.swift */,
 				C9A8C28C2BAE0709004761B8 /* RegisterRequestModel.swift */,
+				C9EEBF4F2BBC41A500A9C930 /* CreateAccountRequestModel.swift */,
 			);
 			path = requestModel;
 			sourceTree = "<group>";
@@ -243,6 +255,8 @@
 			isa = PBXGroup;
 			children = (
 				C9A8C2932BAE09A4004761B8 /* ApiAuthException.swift */,
+				C9EEBF532BBC439C00A9C930 /* AuthenticationError.swift */,
+				C9EEBF552BBC43D800A9C930 /* NetworkError.swift */,
 			);
 			path = errorUtil;
 			sourceTree = "<group>";
@@ -260,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A8C29B2BAE0A46004761B8 /* ApiAuthService.swift */,
+				C9EEBF512BBC420E00A9C930 /* ApiPostTransactionService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -370,7 +385,7 @@
 			files = (
 				C9A8C2592BADBF75004761B8 /* Assets.xcassets in Resources */,
 				C9A8C25C2BADBF75004761B8 /* Base in Resources */,
-				C9A8C2572BADBF72004761B8 /* Base in Resources */,
+				C98B57B12BC019E200657CEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,26 +411,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A8C29E2BAEE28E004761B8 /* LoginViewController.swift in Sources */,
-				C9A8C2872BAE060C004761B8 /* AccounModel.swift in Sources */,
+				C9A8C2872BAE060C004761B8 /* AccountModel.swift in Sources */,
 				C94804082BB7053200562D29 /* CurrencyDisplayViewController.swift in Sources */,
 				C9A8C2542BADBF72004761B8 /* ViewController.swift in Sources */,
 				C9A8C2962BAE09C9004761B8 /* LocalStorageManager.swift in Sources */,
 				C99C27722BB8233400E34028 /* BaseViewController.swift in Sources */,
 				C9A8C2502BADBF72004761B8 /* AppDelegate.swift in Sources */,
 				C9A8C2852BAE05D7004761B8 /* UserModel.swift in Sources */,
+				C9EEBF502BBC41A500A9C930 /* CreateAccountRequestModel.swift in Sources */,
 				C94804062BB702DC00562D29 /* CurrencyResponse.swift in Sources */,
 				C99594CB2BB0302900C1C300 /* RegisterViewController.swift in Sources */,
 				C9A8C28D2BAE0709004761B8 /* RegisterRequestModel.swift in Sources */,
 				C9A8C29C2BAE0A46004761B8 /* ApiAuthService.swift in Sources */,
 				C94804042BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift in Sources */,
 				C9A8C2902BAE0895004761B8 /* ApiServiceInterface.swift in Sources */,
+				C9EEBF582BBC44DC00A9C930 /* CreateAccountViewController.swift in Sources */,
 				C9A8C2942BAE09A4004761B8 /* ApiAuthException.swift in Sources */,
 				C99C27742BB8269400E34028 /* MenuViewController.swift in Sources */,
+				C9EEBF522BBC420E00A9C930 /* ApiPostTransactionService.swift in Sources */,
 				C99594CD2BB031E700C1C300 /* RegisterResponseModel.swift in Sources */,
 				C9A8C2522BADBF72004761B8 /* SceneDelegate.swift in Sources */,
 				C9A8C2892BAE0666004761B8 /* AccessTokenModel.swift in Sources */,
 				C9A8C28B2BAE06F3004761B8 /* LoginRequestModel.swift in Sources */,
 				C9A8C2992BAE0A0E004761B8 /* ApiClient.swift in Sources */,
+				C9EEBF562BBC43D800A9C930 /* NetworkError.swift in Sources */,
+				C9EEBF542BBC439C00A9C930 /* AuthenticationError.swift in Sources */,
 				C94804022BB7019900562D29 /* ExchangeRatesApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,10 +473,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C9A8C2552BADBF72004761B8 /* Main.storyboard */ = {
+		C98B57AE2BC019E200657CEF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C9A8C2562BADBF72004761B8 /* Base */,
+				C98B57AD2BC019E200657CEF /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

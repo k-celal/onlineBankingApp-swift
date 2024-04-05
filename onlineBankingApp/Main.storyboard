@@ -353,55 +353,54 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payment_history" translatesAutoresizingMaskIntoConstraints="NO" id="U9H-mA-25R">
-                                <rect key="frame" x="-59.666666666666657" y="245" width="512.33333333333337" height="128"/>
+                                <rect key="frame" x="122" y="245" width="149" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="2u4-0h-lAq"/>
+                                    <constraint firstAttribute="height" constant="128" id="kl6-Tf-PVF"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_account" translatesAutoresizingMaskIntoConstraints="NO" id="Hex-ak-wq8">
+                                <rect key="frame" x="126" y="603" width="141" height="128"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank_accounts" translatesAutoresizingMaskIntoConstraints="NO" id="IW7-eC-j2c">
+                                <rect key="frame" x="120" y="66" width="153" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="llS-85-kCm"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="transaction_history" translatesAutoresizingMaskIntoConstraints="NO" id="roQ-aj-BUc">
-                                <rect key="frame" x="-59.666666666666657" y="424" width="512.33333333333337" height="128"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_account" translatesAutoresizingMaskIntoConstraints="NO" id="Hex-ak-wq8">
-                                <rect key="frame" x="-59.666666666666657" y="603" width="512.33333333333337" height="128"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank_accounts" translatesAutoresizingMaskIntoConstraints="NO" id="IW7-eC-j2c">
-                                <rect key="frame" x="-60" y="66" width="513" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="9qA-Mf-Iqq"/>
-                                </constraints>
+                                <rect key="frame" x="112" y="424" width="169" height="128"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rhg-R3-Qfh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="o25-Wd-feB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Re7-KQ-cE1" secondAttribute="leading" id="5hb-8Y-sVM"/>
-                            <constraint firstItem="IW7-eC-j2c" firstAttribute="top" secondItem="Rhg-R3-Qfh" secondAttribute="top" constant="66" id="8G8-8C-pUo"/>
-                            <constraint firstItem="U9H-mA-25R" firstAttribute="leading" secondItem="roQ-aj-BUc" secondAttribute="leading" id="8nY-TQ-EEz"/>
-                            <constraint firstItem="Hex-ak-wq8" firstAttribute="top" secondItem="o25-Wd-feB" secondAttribute="bottom" constant="8" id="Auj-yo-AAq"/>
-                            <constraint firstItem="roQ-aj-BUc" firstAttribute="top" secondItem="Re7-KQ-cE1" secondAttribute="bottom" constant="8" id="CGg-2W-ATn"/>
-                            <constraint firstItem="IW7-eC-j2c" firstAttribute="centerX" secondItem="o25-Wd-feB" secondAttribute="centerX" id="H2O-ld-YEO"/>
-                            <constraint firstItem="o25-Wd-feB" firstAttribute="top" secondItem="roQ-aj-BUc" secondAttribute="bottom" constant="8" id="Hla-rT-kAD"/>
-                            <constraint firstItem="Hef-og-tXs" firstAttribute="top" secondItem="IW7-eC-j2c" secondAttribute="bottom" constant="8" id="LPJ-zV-elF"/>
-                            <constraint firstItem="U9H-mA-25R" firstAttribute="centerX" secondItem="roQ-aj-BUc" secondAttribute="centerX" id="QhO-Jn-AOO"/>
+                            <constraint firstItem="Hex-ak-wq8" firstAttribute="top" secondItem="o25-Wd-feB" secondAttribute="bottom" constant="8" symbolic="YES" id="60F-k2-opW"/>
+                            <constraint firstItem="roQ-aj-BUc" firstAttribute="leading" secondItem="Rhg-R3-Qfh" secondAttribute="leading" constant="112" id="IVP-RM-gN7"/>
+                            <constraint firstItem="IW7-eC-j2c" firstAttribute="leading" secondItem="Rhg-R3-Qfh" secondAttribute="leading" constant="120" id="MlE-d6-R6e"/>
+                            <constraint firstItem="o25-Wd-feB" firstAttribute="top" secondItem="roQ-aj-BUc" secondAttribute="bottom" constant="8" symbolic="YES" id="Nvz-z8-gn8"/>
+                            <constraint firstItem="U9H-mA-25R" firstAttribute="centerX" secondItem="Hef-og-tXs" secondAttribute="centerX" id="S9v-H9-N5k"/>
                             <constraint firstAttribute="bottom" secondItem="o25-Wd-feB" secondAttribute="bottom" constant="257" id="Sg2-dq-geL"/>
+                            <constraint firstItem="Hex-ak-wq8" firstAttribute="centerX" secondItem="PAz-8J-yb4" secondAttribute="centerX" id="Sxm-TU-r1a"/>
                             <constraint firstItem="Rhg-R3-Qfh" firstAttribute="bottom" secondItem="PAz-8J-yb4" secondAttribute="bottom" constant="78" id="U0V-E0-nho"/>
                             <constraint firstItem="o25-Wd-feB" firstAttribute="centerX" secondItem="QY1-2x-7ls" secondAttribute="centerX" id="YQZ-Ja-L1x"/>
-                            <constraint firstItem="IW7-eC-j2c" firstAttribute="leading" secondItem="QY1-2x-7ls" secondAttribute="leadingMargin" constant="-76" id="ZEw-k1-NHL"/>
-                            <constraint firstItem="U9H-mA-25R" firstAttribute="top" secondItem="Hef-og-tXs" secondAttribute="bottom" constant="8" id="crO-NE-b4y"/>
+                            <constraint firstItem="U9H-mA-25R" firstAttribute="leading" secondItem="Rhg-R3-Qfh" secondAttribute="leading" constant="122" id="bTJ-Fa-OcY"/>
+                            <constraint firstItem="Hex-ak-wq8" firstAttribute="centerX" secondItem="Re7-KQ-cE1" secondAttribute="centerX" id="bka-xo-G7U"/>
                             <constraint firstItem="o25-Wd-feB" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Hef-og-tXs" secondAttribute="trailing" id="fBh-Pl-eJ7"/>
+                            <constraint firstItem="PAz-8J-yb4" firstAttribute="top" secondItem="Hex-ak-wq8" secondAttribute="bottom" constant="8" symbolic="YES" id="gpM-nU-cXI"/>
+                            <constraint firstItem="U9H-mA-25R" firstAttribute="top" secondItem="Hef-og-tXs" secondAttribute="bottom" constant="8" id="gxg-c7-a25"/>
                             <constraint firstItem="o25-Wd-feB" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PAz-8J-yb4" secondAttribute="trailing" id="ie7-fw-Go4"/>
                             <constraint firstItem="o25-Wd-feB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Rhg-R3-Qfh" secondAttribute="leading" id="kWu-Jl-SfU"/>
-                            <constraint firstItem="U9H-mA-25R" firstAttribute="centerX" secondItem="Hef-og-tXs" secondAttribute="centerX" id="oEt-Li-9cN"/>
-                            <constraint firstItem="roQ-aj-BUc" firstAttribute="leading" secondItem="Hex-ak-wq8" secondAttribute="leading" id="oFg-5r-LqE"/>
+                            <constraint firstItem="roQ-aj-BUc" firstAttribute="centerX" secondItem="Re7-KQ-cE1" secondAttribute="centerX" id="meR-FB-uYK"/>
+                            <constraint firstItem="Hex-ak-wq8" firstAttribute="leading" secondItem="Rhg-R3-Qfh" secondAttribute="leading" constant="126" id="nI2-pO-Zr2"/>
                             <constraint firstItem="o25-Wd-feB" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Re7-KQ-cE1" secondAttribute="trailing" id="omR-gq-8LH"/>
-                            <constraint firstItem="Hex-ak-wq8" firstAttribute="centerX" secondItem="Hef-og-tXs" secondAttribute="centerX" id="pIl-2V-egs"/>
-                            <constraint firstItem="Hex-ak-wq8" firstAttribute="centerX" secondItem="PAz-8J-yb4" secondAttribute="centerX" id="rbK-oL-42P"/>
                             <constraint firstItem="o25-Wd-feB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hef-og-tXs" secondAttribute="leading" id="rr9-4P-7Uu"/>
                             <constraint firstItem="Re7-KQ-cE1" firstAttribute="top" secondItem="QY1-2x-7ls" secondAttribute="top" constant="381" id="t0F-9J-90t"/>
-                            <constraint firstItem="IW7-eC-j2c" firstAttribute="centerX" secondItem="Hef-og-tXs" secondAttribute="centerX" id="tTo-kd-blJ"/>
-                            <constraint firstItem="PAz-8J-yb4" firstAttribute="top" secondItem="Hex-ak-wq8" secondAttribute="bottom" constant="8" id="tXq-8b-pHp"/>
                             <constraint firstItem="o25-Wd-feB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PAz-8J-yb4" secondAttribute="leading" id="uCd-wL-Qtb"/>
-                            <constraint firstItem="Hex-ak-wq8" firstAttribute="centerX" secondItem="Re7-KQ-cE1" secondAttribute="centerX" id="xQ1-CP-JOc"/>
+                            <constraint firstItem="IW7-eC-j2c" firstAttribute="centerX" secondItem="Hef-og-tXs" secondAttribute="centerX" id="uV5-4n-nov"/>
+                            <constraint firstItem="Hef-og-tXs" firstAttribute="top" secondItem="IW7-eC-j2c" secondAttribute="bottom" constant="8" symbolic="YES" id="ucb-4o-6MY"/>
+                            <constraint firstItem="roQ-aj-BUc" firstAttribute="top" secondItem="Re7-KQ-cE1" secondAttribute="bottom" constant="8" symbolic="YES" id="vR9-jK-1IC"/>
+                            <constraint firstItem="IW7-eC-j2c" firstAttribute="top" secondItem="Rhg-R3-Qfh" secondAttribute="top" constant="66" id="vSi-EP-bPP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3Ez-Px-je7"/>
@@ -418,7 +417,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0UI-At-l2i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2498" y="375"/>
+            <point key="canvasLocation" x="2496.9465648854962" y="374.64788732394368"/>
         </scene>
         <!--DashboardViewController-->
         <scene sceneID="f8Q-TH-Vdg">
@@ -448,18 +447,64 @@
         <!--CreateAccountViewContoller-->
         <scene sceneID="rXa-ny-eJ9">
             <objects>
-                <viewController id="pBi-FU-EEq" userLabel="CreateAccountViewContoller" sceneMemberID="viewController">
+                <viewController id="pBi-FU-EEq" userLabel="CreateAccountViewContoller" customClass="CreateAccountViewController" customModule="onlineBankingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Je7-ev-qpf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hesap Adı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oO-Yd-mxY">
+                                <rect key="frame" x="46" y="301" width="78" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hesap Türü" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQw-fW-ky8">
+                                <rect key="frame" x="46" y="373" width="88" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bank_accounts" translatesAutoresizingMaskIntoConstraints="NO" id="8Wc-iA-P4Z">
+                                <rect key="frame" x="76" y="122" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P3T-Bf-ENr">
+                                <rect key="frame" x="168" y="308" width="148" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bBt-T9-2al">
+                                <rect key="frame" x="168" y="373" width="148" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qz-go-FzI">
+                                <rect key="frame" x="148" y="477" width="97" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Hesap Aç">
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="VxI-Of-47X"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="8nh-XH-3Ox"/>
+                    <connections>
+                        <outlet property="accountNameTextField" destination="P3T-Bf-ENr" id="kkf-1a-ef6"/>
+                        <outlet property="accountTypeTextField" destination="bBt-T9-2al" id="2ar-Bz-leP"/>
+                        <outlet property="createAccountButton" destination="9Qz-go-FzI" id="HTL-uX-7yA"/>
+                        <segue destination="jph-eX-451" kind="presentation" identifier="createAccToMenuSegue" modalPresentationStyle="fullScreen" id="Np2-op-LK2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dgd-Lm-GtE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3537" y="1411"/>
+            <point key="canvasLocation" x="3537" y="1508"/>
         </scene>
         <!--TransactionHistoryViewController-->
         <scene sceneID="vK1-JT-Zoa">
@@ -513,6 +558,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Np2-op-LK2"/>
         <segue reference="btL-X1-FPK"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -534,7 +580,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
