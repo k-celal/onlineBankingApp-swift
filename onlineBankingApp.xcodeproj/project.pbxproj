@@ -12,6 +12,8 @@
 		C94804062BB702DC00562D29 /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804052BB702DC00562D29 /* CurrencyResponse.swift */; };
 		C94804082BB7053200562D29 /* CurrencyDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804072BB7053200562D29 /* CurrencyDisplayViewController.swift */; };
 		C98B57B12BC019E200657CEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98B57AE2BC019E200657CEF /* Main.storyboard */; };
+		C98B57B32BC02DD300657CEF /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B57B22BC02DD300657CEF /* Transaction.swift */; };
+		C98B57B52BC02E0700657CEF /* TransactionHistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B57B42BC02E0700657CEF /* TransactionHistoryResponse.swift */; };
 		C99594CB2BB0302900C1C300 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99594CA2BB0302900C1C300 /* RegisterViewController.swift */; };
 		C99594CD2BB031E700C1C300 /* RegisterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */; };
 		C99C27722BB8233400E34028 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C27712BB8233400E34028 /* BaseViewController.swift */; };
@@ -65,6 +67,8 @@
 		C94804052BB702DC00562D29 /* CurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResponse.swift; sourceTree = "<group>"; };
 		C94804072BB7053200562D29 /* CurrencyDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDisplayViewController.swift; sourceTree = "<group>"; };
 		C98B57AD2BC019E200657CEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		C98B57B22BC02DD300657CEF /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		C98B57B42BC02E0700657CEF /* TransactionHistoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryResponse.swift; sourceTree = "<group>"; };
 		C99594CA2BB0302900C1C300 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponseModel.swift; sourceTree = "<group>"; };
 		C99C27712BB8233400E34028 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 				C9A8C2842BAE05D7004761B8 /* UserModel.swift */,
 				C9A8C2862BAE060C004761B8 /* AccountModel.swift */,
 				C9A8C2882BAE0666004761B8 /* AccessTokenModel.swift */,
+				C98B57B22BC02DD300657CEF /* Transaction.swift */,
 			);
 			path = baseModel;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 			children = (
 				C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */,
 				C94804052BB702DC00562D29 /* CurrencyResponse.swift */,
+				C98B57B42BC02E0700657CEF /* TransactionHistoryResponse.swift */,
 			);
 			path = responseModel;
 			sourceTree = "<group>";
@@ -424,6 +430,8 @@
 				C9A8C28D2BAE0709004761B8 /* RegisterRequestModel.swift in Sources */,
 				C9A8C29C2BAE0A46004761B8 /* ApiAuthService.swift in Sources */,
 				C94804042BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift in Sources */,
+				C98B57B52BC02E0700657CEF /* TransactionHistoryResponse.swift in Sources */,
+				C98B57B32BC02DD300657CEF /* Transaction.swift in Sources */,
 				C9A8C2902BAE0895004761B8 /* ApiServiceInterface.swift in Sources */,
 				C9EEBF582BBC44DC00A9C930 /* CreateAccountViewController.swift in Sources */,
 				C9A8C2942BAE09A4004761B8 /* ApiAuthException.swift in Sources */,
