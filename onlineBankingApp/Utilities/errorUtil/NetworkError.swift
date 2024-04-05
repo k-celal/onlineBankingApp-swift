@@ -7,6 +7,7 @@
 
 import Foundation
 enum NetworksError: Error {
+    case missingAccessToken
     case invalidURL
     case invalidResponse
     case statusCode(Int)

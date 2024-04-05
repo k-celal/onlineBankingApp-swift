@@ -14,6 +14,7 @@
 		C98B57B12BC019E200657CEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98B57AE2BC019E200657CEF /* Main.storyboard */; };
 		C98B57B32BC02DD300657CEF /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B57B22BC02DD300657CEF /* Transaction.swift */; };
 		C98B57B52BC02E0700657CEF /* TransactionHistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B57B42BC02E0700657CEF /* TransactionHistoryResponse.swift */; };
+		C98B57B72BC032EE00657CEF /* ApiGetTransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B57B62BC032EE00657CEF /* ApiGetTransactionService.swift */; };
 		C99594CB2BB0302900C1C300 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99594CA2BB0302900C1C300 /* RegisterViewController.swift */; };
 		C99594CD2BB031E700C1C300 /* RegisterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */; };
 		C99C27722BB8233400E34028 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C27712BB8233400E34028 /* BaseViewController.swift */; };
@@ -69,6 +70,7 @@
 		C98B57AD2BC019E200657CEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		C98B57B22BC02DD300657CEF /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		C98B57B42BC02E0700657CEF /* TransactionHistoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryResponse.swift; sourceTree = "<group>"; };
+		C98B57B62BC032EE00657CEF /* ApiGetTransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiGetTransactionService.swift; sourceTree = "<group>"; };
 		C99594CA2BB0302900C1C300 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponseModel.swift; sourceTree = "<group>"; };
 		C99C27712BB8233400E34028 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 			children = (
 				C9A8C29B2BAE0A46004761B8 /* ApiAuthService.swift */,
 				C9EEBF512BBC420E00A9C930 /* ApiPostTransactionService.swift */,
+				C98B57B62BC032EE00657CEF /* ApiGetTransactionService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				C99C27722BB8233400E34028 /* BaseViewController.swift in Sources */,
 				C9A8C2502BADBF72004761B8 /* AppDelegate.swift in Sources */,
 				C9A8C2852BAE05D7004761B8 /* UserModel.swift in Sources */,
+				C98B57B72BC032EE00657CEF /* ApiGetTransactionService.swift in Sources */,
 				C9EEBF502BBC41A500A9C930 /* CreateAccountRequestModel.swift in Sources */,
 				C94804062BB702DC00562D29 /* CurrencyResponse.swift in Sources */,
 				C99594CB2BB0302900C1C300 /* RegisterViewController.swift in Sources */,
