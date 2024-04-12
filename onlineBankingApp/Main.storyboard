@@ -410,8 +410,8 @@
                         <outlet property="transactionHistory" destination="o25-Wd-feB" id="NJr-WJ-aEY"/>
                         <outlet property="viewDashboard" destination="Hef-og-tXs" id="4TB-eY-QQe"/>
                         <segue destination="hJZ-Ww-RKO" kind="presentation" identifier="menuToDashboardSegue" modalPresentationStyle="fullScreen" id="l4M-LE-dBo"/>
-                        <segue destination="pBi-FU-EEq" kind="presentation" identifier="menuToCreateAccSegue" modalPresentationStyle="fullScreen" id="kek-OP-fQl"/>
-                        <segue destination="peU-v7-ZBG" kind="presentation" identifier="menuToTransactionHistSegue" modalPresentationStyle="fullScreen" id="ZLG-Sv-cWU"/>
+                        <segue destination="MOf-12-CRO" kind="presentation" identifier="menuToCreateAccSegue" modalPresentationStyle="fullScreen" id="kek-OP-fQl"/>
+                        <segue destination="hu1-Ye-aVJ" kind="presentation" identifier="menuToTransactionHistSegue" modalPresentationStyle="fullScreen" id="ZLG-Sv-cWU"/>
                         <segue destination="rso-Rb-taL" kind="presentation" identifier="menuToPaymentHistSegue" modalPresentationStyle="fullScreen" id="X2k-w6-bGd"/>
                     </connections>
                 </viewController>
@@ -494,7 +494,7 @@
                         <viewLayoutGuide key="safeArea" id="VxI-Of-47X"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8nh-XH-3Ox"/>
+                    <navigationItem key="navigationItem" title="Hesap Aç" id="8nh-XH-3Ox"/>
                     <connections>
                         <outlet property="accountNameTextField" destination="P3T-Bf-ENr" id="kkf-1a-ef6"/>
                         <outlet property="accountTypeTextField" destination="bBt-T9-2al" id="2ar-Bz-leP"/>
@@ -504,32 +504,99 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dgd-Lm-GtE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3537" y="1508"/>
+            <point key="canvasLocation" x="4463.3587786259541" y="1507.7464788732395"/>
         </scene>
         <!--TransactionHistoryViewController-->
         <scene sceneID="vK1-JT-Zoa">
             <objects>
-                <viewController id="peU-v7-ZBG" userLabel="TransactionHistoryViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="prs-eQ-kp4">
+                <viewController id="peU-v7-ZBG" userLabel="TransactionHistoryViewController" customClass="TransactionHistoryViewController" customModule="onlineBankingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="e1X-Fp-IeS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TraHist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbl-qw-YnF">
-                                <rect key="frame" x="109" y="82" width="239" height="196"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="OdA-1P-p2W"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="IYk-YK-5dP"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="transactionCell" rowHeight="180" id="qrZ-3l-rdm" customClass="TransactionCellsTableViewCell" customModule="onlineBankingApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="180"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qrZ-3l-rdm" id="chU-lj-goq">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="180"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkU-4N-B9K">
+                                            <rect key="frame" x="20" y="11" width="353" height="158"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="xAz-sy-9iO">
+                                            <rect key="frame" x="36" y="24" width="75" height="132"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21B-oG-PUL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="14.333333333333334" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hesap No" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zR-g5-eW3" userLabel="ThesapNo">
+                                                    <rect key="frame" x="0.0" y="22.333333333333336" width="75" height="20.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYS-dl-al1">
+                                                    <rect key="frame" x="0.0" y="44.666666666666671" width="37.333333333333336" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRu-BT-S3c">
+                                                    <rect key="frame" x="0.0" y="67" width="60" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4i-sY-IdD">
+                                                    <rect key="frame" x="0.0" y="89.333333333333329" width="49" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarih" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjU-aM-p96">
+                                                    <rect key="frame" x="0.0" y="111.66666666666666" width="37" height="20.333333333333343"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="xAz-sy-9iO" firstAttribute="centerY" secondItem="chU-lj-goq" secondAttribute="centerY" id="8sW-OA-CJQ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="nkU-4N-B9K" secondAttribute="bottom" id="MQJ-5w-cOY"/>
+                                        <constraint firstItem="xAz-sy-9iO" firstAttribute="leading" secondItem="chU-lj-goq" secondAttribute="leadingMargin" constant="16" id="MY3-NZ-WI9"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="nkU-4N-B9K" secondAttribute="trailing" id="Oh6-pi-Kry"/>
+                                        <constraint firstItem="nkU-4N-B9K" firstAttribute="leading" secondItem="chU-lj-goq" secondAttribute="leadingMargin" id="R9M-UZ-LsV"/>
+                                        <constraint firstItem="nkU-4N-B9K" firstAttribute="top" secondItem="chU-lj-goq" secondAttribute="topMargin" id="mk2-vi-g7z"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellBackground" destination="nkU-4N-B9K" id="67o-do-45d"/>
+                                    <outlet property="t_amount" destination="yRu-BT-S3c" id="FXb-cr-Wb6"/>
+                                    <outlet property="t_date" destination="OjU-aM-p96" id="EOF-eZ-adN"/>
+                                    <outlet property="t_hesaNo" destination="2zR-g5-eW3" id="roq-Rk-8jX"/>
+                                    <outlet property="t_id" destination="21B-oG-PUL" id="Unt-dp-hsf"/>
+                                    <outlet property="t_status" destination="T4i-sY-IdD" id="O1j-T1-Fst"/>
+                                    <outlet property="t_type" destination="iYS-dl-al1" id="TDC-CY-hgK"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Transaction History" id="IYk-YK-5dP"/>
+                    <connections>
+                        <outlet property="transactionHistoryTable" destination="e1X-Fp-IeS" id="xFT-Of-RJU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YRv-ra-8ZF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3537" y="766"/>
+            <point key="canvasLocation" x="4463.3587786259541" y="765.49295774647896"/>
         </scene>
         <!--PaymentHistoryViewController-->
         <scene sceneID="4n3-J8-XWW">
@@ -554,10 +621,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g48-oy-bgk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3537" y="134"/>
+            <point key="canvasLocation" x="4463.3587786259541" y="133.80281690140845"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DsI-Qb-6BI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hu1-Ye-aVJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Nx6-At-1L7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="104.33333333333334"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="peU-v7-ZBG" kind="relationship" relationship="rootViewController" id="Cba-Zb-VBh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Kg-B3-ZNY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3536.6412213740455" y="765.49295774647896"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XLn-mG-Fnj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MOf-12-CRO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Exa-xP-TEy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="104.33333333333334"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pBi-FU-EEq" kind="relationship" relationship="rootViewController" id="05u-ti-gZh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JWY-Ew-92q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3536.6412213740455" y="1507.7464788732395"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="kek-OP-fQl"/>
         <segue reference="Np2-op-LK2"/>
         <segue reference="btL-X1-FPK"/>
     </inferredMetricsTieBreakers>

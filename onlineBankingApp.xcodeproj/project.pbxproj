@@ -15,6 +15,8 @@
 		C98B57B32BC02DD300657CEF /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B57B22BC02DD300657CEF /* Transaction.swift */; };
 		C98B57B52BC02E0700657CEF /* TransactionHistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B57B42BC02E0700657CEF /* TransactionHistoryResponse.swift */; };
 		C98B57B72BC032EE00657CEF /* ApiGetTransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B57B62BC032EE00657CEF /* ApiGetTransactionService.swift */; };
+		C98B57BA2BC03CE800657CEF /* TransactionCellsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B57B92BC03CE800657CEF /* TransactionCellsTableViewCell.swift */; };
+		C98B57BC2BC03E6600657CEF /* TransactionHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B57BB2BC03E6600657CEF /* TransactionHistoryViewController.swift */; };
 		C99594CB2BB0302900C1C300 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99594CA2BB0302900C1C300 /* RegisterViewController.swift */; };
 		C99594CD2BB031E700C1C300 /* RegisterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */; };
 		C99C27722BB8233400E34028 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C27712BB8233400E34028 /* BaseViewController.swift */; };
@@ -71,6 +73,8 @@
 		C98B57B22BC02DD300657CEF /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		C98B57B42BC02E0700657CEF /* TransactionHistoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryResponse.swift; sourceTree = "<group>"; };
 		C98B57B62BC032EE00657CEF /* ApiGetTransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiGetTransactionService.swift; sourceTree = "<group>"; };
+		C98B57B92BC03CE800657CEF /* TransactionCellsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCellsTableViewCell.swift; sourceTree = "<group>"; };
+		C98B57BB2BC03E6600657CEF /* TransactionHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryViewController.swift; sourceTree = "<group>"; };
 		C99594CA2BB0302900C1C300 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponseModel.swift; sourceTree = "<group>"; };
 		C99C27712BB8233400E34028 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C98B57B82BC03CBE00657CEF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C98B57B92BC03CE800657CEF /* TransactionCellsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		C9A8C2432BADBF72004761B8 = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +206,7 @@
 				C99C27712BB8233400E34028 /* BaseViewController.swift */,
 				C99C27732BB8269400E34028 /* MenuViewController.swift */,
 				C9EEBF572BBC44DC00A9C930 /* CreateAccountViewController.swift */,
+				C98B57BB2BC03E6600657CEF /* TransactionHistoryViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -253,6 +266,7 @@
 		C9A8C2912BAE097F004761B8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C98B57B82BC03CBE00657CEF /* Cells */,
 				C9A8C2922BAE0992004761B8 /* errorUtil */,
 				C9A8C2952BAE09C9004761B8 /* LocalStorageManager.swift */,
 			);
@@ -443,9 +457,11 @@
 				C9EEBF522BBC420E00A9C930 /* ApiPostTransactionService.swift in Sources */,
 				C99594CD2BB031E700C1C300 /* RegisterResponseModel.swift in Sources */,
 				C9A8C2522BADBF72004761B8 /* SceneDelegate.swift in Sources */,
+				C98B57BC2BC03E6600657CEF /* TransactionHistoryViewController.swift in Sources */,
 				C9A8C2892BAE0666004761B8 /* AccessTokenModel.swift in Sources */,
 				C9A8C28B2BAE06F3004761B8 /* LoginRequestModel.swift in Sources */,
 				C9A8C2992BAE0A0E004761B8 /* ApiClient.swift in Sources */,
+				C98B57BA2BC03CE800657CEF /* TransactionCellsTableViewCell.swift in Sources */,
 				C9EEBF562BBC43D800A9C930 /* NetworkError.swift in Sources */,
 				C9EEBF542BBC439C00A9C930 /* AuthenticationError.swift in Sources */,
 				C94804022BB7019900562D29 /* ExchangeRatesApiClient.swift in Sources */,
