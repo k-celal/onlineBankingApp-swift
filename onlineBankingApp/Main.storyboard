@@ -606,7 +606,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="paymentCell" rowHeight="180" id="jXt-3c-sSo" customClass="TransactionCellsTableViewCell" customModule="onlineBankingApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="paymentCell" rowHeight="180" id="jXt-3c-sSo" customClass="PaymentHistoryCellsTableViewCell" customModule="onlineBankingApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jXt-3c-sSo" id="OwC-2V-BCt">
@@ -632,7 +632,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abone No" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRC-sc-8B0" userLabel="Tabone">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abone No" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRC-sc-8B0" userLabel="TaboneNo">
                                                             <rect key="frame" x="0.0" y="44.666666666666664" width="75.666666666666671" height="20.333333333333336"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -678,12 +678,14 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="cellBackground" destination="0Qx-hC-4te" id="cSf-q6-Tii"/>
-                                            <outlet property="t_amount" destination="so5-j6-Gu6" id="q4T-l0-lCh"/>
-                                            <outlet property="t_date" destination="T6t-ZZ-sfH" id="KkY-Wk-78f"/>
-                                            <outlet property="t_hesaNo" destination="uSc-4a-rFj" id="qcL-ij-tal"/>
-                                            <outlet property="t_id" destination="eBz-qx-MQ2" id="TgU-sf-PaB"/>
-                                            <outlet property="t_status" destination="MtP-3m-nL2" id="O7p-It-YAN"/>
+                                            <outlet property="cellBackground" destination="0Qx-hC-4te" id="Nzj-Bv-cs8"/>
+                                            <outlet property="t_aboneNo" destination="WRC-sc-8B0" id="X0D-el-6HP"/>
+                                            <outlet property="t_abonelik" destination="Sxe-XB-G3Y" id="BuV-lJ-6gv"/>
+                                            <outlet property="t_amount" destination="so5-j6-Gu6" id="Qo4-vu-pSY"/>
+                                            <outlet property="t_date" destination="T6t-ZZ-sfH" id="3Ww-ba-3zq"/>
+                                            <outlet property="t_hesaNo" destination="uSc-4a-rFj" id="Uru-Xf-xOd"/>
+                                            <outlet property="t_id" destination="eBz-qx-MQ2" id="omC-cu-C0t"/>
+                                            <outlet property="t_status" destination="MtP-3m-nL2" id="yMH-6C-bGS"/>
                                             <outlet property="t_type" destination="WRC-sc-8B0" id="jiQ-zM-XlT"/>
                                         </connections>
                                     </tableViewCell>
@@ -755,7 +757,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kek-OP-fQl"/>
         <segue reference="Np2-op-LK2"/>
         <segue reference="btL-X1-FPK"/>
     </inferredMetricsTieBreakers>
