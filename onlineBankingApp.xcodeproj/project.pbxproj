@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C92593362BCD856A00763612 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98B57AD2BC019E200657CEF /* Main.storyboard */; };
+		C92593382BCD8CA200763612 /* PaymentHistoryCellsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92593372BCD8CA200763612 /* PaymentHistoryCellsTableViewCell.swift */; };
 		C94804022BB7019900562D29 /* ExchangeRatesApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804012BB7019900562D29 /* ExchangeRatesApiClient.swift */; };
 		C94804042BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804032BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift */; };
 		C94804062BB702DC00562D29 /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804052BB702DC00562D29 /* CurrencyResponse.swift */; };
 		C94804082BB7053200562D29 /* CurrencyDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804072BB7053200562D29 /* CurrencyDisplayViewController.swift */; };
-		C98B57B12BC019E200657CEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98B57AE2BC019E200657CEF /* Main.storyboard */; };
 		C98B57B32BC02DD300657CEF /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B57B22BC02DD300657CEF /* Transaction.swift */; };
 		C98B57B52BC02E0700657CEF /* TransactionHistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B57B42BC02E0700657CEF /* TransactionHistoryResponse.swift */; };
 		C98B57B72BC032EE00657CEF /* ApiGetTransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B57B62BC032EE00657CEF /* ApiGetTransactionService.swift */; };
@@ -65,11 +66,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C92593372BCD8CA200763612 /* PaymentHistoryCellsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryCellsTableViewCell.swift; sourceTree = "<group>"; };
 		C94804012BB7019900562D29 /* ExchangeRatesApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesApiClient.swift; sourceTree = "<group>"; };
 		C94804032BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesApiServiceInterface.swift; sourceTree = "<group>"; };
 		C94804052BB702DC00562D29 /* CurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResponse.swift; sourceTree = "<group>"; };
 		C94804072BB7053200562D29 /* CurrencyDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDisplayViewController.swift; sourceTree = "<group>"; };
-		C98B57AD2BC019E200657CEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		C98B57AD2BC019E200657CEF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C98B57B22BC02DD300657CEF /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		C98B57B42BC02E0700657CEF /* TransactionHistoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryResponse.swift; sourceTree = "<group>"; };
 		C98B57B62BC032EE00657CEF /* ApiGetTransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiGetTransactionService.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				C98B57B92BC03CE800657CEF /* TransactionCellsTableViewCell.swift */,
+				C92593372BCD8CA200763612 /* PaymentHistoryCellsTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -171,7 +174,7 @@
 				C9A8C27F2BAE057E004761B8 /* View */,
 				C9A8C24F2BADBF72004761B8 /* AppDelegate.swift */,
 				C9A8C2512BADBF72004761B8 /* SceneDelegate.swift */,
-				C98B57AE2BC019E200657CEF /* Main.storyboard */,
+				C98B57AD2BC019E200657CEF /* Main.storyboard */,
 				C9A8C2582BADBF75004761B8 /* Assets.xcassets */,
 				C9A8C25A2BADBF75004761B8 /* LaunchScreen.storyboard */,
 				C9A8C25D2BADBF75004761B8 /* Info.plist */,
@@ -408,7 +411,7 @@
 			files = (
 				C9A8C2592BADBF75004761B8 /* Assets.xcassets in Resources */,
 				C9A8C25C2BADBF75004761B8 /* Base in Resources */,
-				C98B57B12BC019E200657CEF /* Main.storyboard in Resources */,
+				C92593362BCD856A00763612 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +461,7 @@
 				C99594CD2BB031E700C1C300 /* RegisterResponseModel.swift in Sources */,
 				C9A8C2522BADBF72004761B8 /* SceneDelegate.swift in Sources */,
 				C98B57BC2BC03E6600657CEF /* TransactionHistoryViewController.swift in Sources */,
+				C92593382BCD8CA200763612 /* PaymentHistoryCellsTableViewCell.swift in Sources */,
 				C9A8C2892BAE0666004761B8 /* AccessTokenModel.swift in Sources */,
 				C9A8C28B2BAE06F3004761B8 /* LoginRequestModel.swift in Sources */,
 				C9A8C2992BAE0A0E004761B8 /* ApiClient.swift in Sources */,
@@ -501,14 +505,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C98B57AE2BC019E200657CEF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C98B57AD2BC019E200657CEF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C9A8C25A2BADBF75004761B8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
