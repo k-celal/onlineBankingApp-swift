@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C92593362BCD856A00763612 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98B57AD2BC019E200657CEF /* Main.storyboard */; };
 		C92593382BCD8CA200763612 /* PaymentHistoryCellsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92593372BCD8CA200763612 /* PaymentHistoryCellsTableViewCell.swift */; };
+		C925933A2BCD8E1200763612 /* PaymentHistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92593392BCD8E1200763612 /* PaymentHistoryResponse.swift */; };
+		C925933C2BCD8E8500763612 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C925933B2BCD8E8500763612 /* Payment.swift */; };
 		C94804022BB7019900562D29 /* ExchangeRatesApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804012BB7019900562D29 /* ExchangeRatesApiClient.swift */; };
 		C94804042BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804032BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift */; };
 		C94804062BB702DC00562D29 /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804052BB702DC00562D29 /* CurrencyResponse.swift */; };
@@ -67,6 +69,8 @@
 
 /* Begin PBXFileReference section */
 		C92593372BCD8CA200763612 /* PaymentHistoryCellsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryCellsTableViewCell.swift; sourceTree = "<group>"; };
+		C92593392BCD8E1200763612 /* PaymentHistoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryResponse.swift; sourceTree = "<group>"; };
+		C925933B2BCD8E8500763612 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		C94804012BB7019900562D29 /* ExchangeRatesApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesApiClient.swift; sourceTree = "<group>"; };
 		C94804032BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesApiServiceInterface.swift; sourceTree = "<group>"; };
 		C94804052BB702DC00562D29 /* CurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResponse.swift; sourceTree = "<group>"; };
@@ -231,6 +235,7 @@
 				C9A8C2862BAE060C004761B8 /* AccountModel.swift */,
 				C9A8C2882BAE0666004761B8 /* AccessTokenModel.swift */,
 				C98B57B22BC02DD300657CEF /* Transaction.swift */,
+				C925933B2BCD8E8500763612 /* Payment.swift */,
 			);
 			path = baseModel;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 				C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */,
 				C94804052BB702DC00562D29 /* CurrencyResponse.swift */,
 				C98B57B42BC02E0700657CEF /* TransactionHistoryResponse.swift */,
+				C92593392BCD8E1200763612 /* PaymentHistoryResponse.swift */,
 			);
 			path = responseModel;
 			sourceTree = "<group>";
@@ -445,11 +451,13 @@
 				C9A8C2502BADBF72004761B8 /* AppDelegate.swift in Sources */,
 				C9A8C2852BAE05D7004761B8 /* UserModel.swift in Sources */,
 				C98B57B72BC032EE00657CEF /* ApiGetTransactionService.swift in Sources */,
+				C925933C2BCD8E8500763612 /* Payment.swift in Sources */,
 				C9EEBF502BBC41A500A9C930 /* CreateAccountRequestModel.swift in Sources */,
 				C94804062BB702DC00562D29 /* CurrencyResponse.swift in Sources */,
 				C99594CB2BB0302900C1C300 /* RegisterViewController.swift in Sources */,
 				C9A8C28D2BAE0709004761B8 /* RegisterRequestModel.swift in Sources */,
 				C9A8C29C2BAE0A46004761B8 /* ApiAuthService.swift in Sources */,
+				C925933A2BCD8E1200763612 /* PaymentHistoryResponse.swift in Sources */,
 				C94804042BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift in Sources */,
 				C98B57B52BC02E0700657CEF /* TransactionHistoryResponse.swift in Sources */,
 				C98B57B32BC02DD300657CEF /* Transaction.swift in Sources */,
