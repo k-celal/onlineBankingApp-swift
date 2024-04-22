@@ -22,6 +22,8 @@
 		C98B57BC2BC03E6600657CEF /* TransactionHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B57BB2BC03E6600657CEF /* TransactionHistoryViewController.swift */; };
 		C99594CB2BB0302900C1C300 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99594CA2BB0302900C1C300 /* RegisterViewController.swift */; };
 		C99594CD2BB031E700C1C300 /* RegisterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */; };
+		C99A69172BD6A50600296C13 /* DashboardCellsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A69162BD6A50600296C13 /* DashboardCellsCollectionViewCell.swift */; };
+		C99A69192BD6AFE000296C13 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A69182BD6AFE000296C13 /* DashboardViewController.swift */; };
 		C99C27722BB8233400E34028 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C27712BB8233400E34028 /* BaseViewController.swift */; };
 		C99C27742BB8269400E34028 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C27732BB8269400E34028 /* MenuViewController.swift */; };
 		C9A8C2502BADBF72004761B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C24F2BADBF72004761B8 /* AppDelegate.swift */; };
@@ -84,6 +86,8 @@
 		C98B57BB2BC03E6600657CEF /* TransactionHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryViewController.swift; sourceTree = "<group>"; };
 		C99594CA2BB0302900C1C300 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C99594CC2BB031E700C1C300 /* RegisterResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponseModel.swift; sourceTree = "<group>"; };
+		C99A69162BD6A50600296C13 /* DashboardCellsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCellsCollectionViewCell.swift; sourceTree = "<group>"; };
+		C99A69182BD6AFE000296C13 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		C99C27712BB8233400E34028 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C99C27732BB8269400E34028 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		C9A8C24C2BADBF72004761B8 /* onlineBankingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onlineBankingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +151,7 @@
 			children = (
 				C98B57B92BC03CE800657CEF /* TransactionCellsTableViewCell.swift */,
 				C92593372BCD8CA200763612 /* PaymentHistoryCellsTableViewCell.swift */,
+				C99A69162BD6A50600296C13 /* DashboardCellsCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 				C9EEBF572BBC44DC00A9C930 /* CreateAccountViewController.swift */,
 				C98B57BB2BC03E6600657CEF /* TransactionHistoryViewController.swift */,
 				C9AFA1842BD1299F00AAD9AE /* PaymentHistoryViewController.swift */,
+				C99A69182BD6AFE000296C13 /* DashboardViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -462,7 +468,9 @@
 				C9A8C29C2BAE0A46004761B8 /* ApiAuthService.swift in Sources */,
 				C925933A2BCD8E1200763612 /* PaymentHistoryResponse.swift in Sources */,
 				C94804042BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift in Sources */,
+				C99A69172BD6A50600296C13 /* DashboardCellsCollectionViewCell.swift in Sources */,
 				C98B57B52BC02E0700657CEF /* TransactionHistoryResponse.swift in Sources */,
+				C99A69192BD6AFE000296C13 /* DashboardViewController.swift in Sources */,
 				C98B57B32BC02DD300657CEF /* Transaction.swift in Sources */,
 				C9A8C2902BAE0895004761B8 /* ApiServiceInterface.swift in Sources */,
 				C9EEBF582BBC44DC00A9C930 /* CreateAccountViewController.swift in Sources */,
