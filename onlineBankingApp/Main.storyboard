@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -404,7 +405,7 @@
                         <outlet property="paymentHistory" destination="Re7-KQ-cE1" id="bHD-4c-CQJ"/>
                         <outlet property="transactionHistory" destination="o25-Wd-feB" id="NJr-WJ-aEY"/>
                         <outlet property="viewDashboard" destination="Hef-og-tXs" id="4TB-eY-QQe"/>
-                        <segue destination="hJZ-Ww-RKO" kind="presentation" identifier="menuToDashboardSegue" modalPresentationStyle="fullScreen" id="l4M-LE-dBo"/>
+                        <segue destination="VgN-Pp-TVc" kind="presentation" identifier="menuToDashboardSegue" modalPresentationStyle="fullScreen" id="l4M-LE-dBo"/>
                         <segue destination="MOf-12-CRO" kind="presentation" identifier="menuToCreateAccSegue" modalPresentationStyle="fullScreen" id="kek-OP-fQl"/>
                         <segue destination="hu1-Ye-aVJ" kind="presentation" identifier="menuToTransactionHistSegue" modalPresentationStyle="fullScreen" id="ZLG-Sv-cWU"/>
                         <segue destination="eTN-Jy-E67" kind="presentation" identifier="menuToPaymentHistSegue" modalPresentationStyle="fullScreen" id="X2k-w6-bGd"/>
@@ -422,22 +423,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dashboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qs-4p-Df5">
-                                <rect key="frame" x="77" y="117" width="239" height="196"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HEX-Oy-3G5">
+                                <rect key="frame" x="0.0" y="96" width="393" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SYo-tn-xX6">
+                                    <size key="itemSize" width="336" height="203"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yGv-Az-bFO">
+                                        <rect key="frame" x="28.666666666666668" y="0.0" width="336" height="203"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Mhd-xO-1FD" userLabel="Cell Background">
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="203"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="LTc-LM-F3y">
+                                                    <rect key="frame" x="8" y="8" width="81" height="185.66666666666666"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hesap ID" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RzL-Vo-05q" userLabel="AccountID">
+                                                            <rect key="frame" x="0.0" y="0.0" width="69.333333333333329" height="20.333333333333332"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hesap No" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hv6-bo-7ny" userLabel="AccountNo">
+                                                            <rect key="frame" x="0.0" y="41.333333333333336" width="77.666666666666671" height="20.333333333333336"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hesap Adi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teh-Ql-8MK" userLabel="AccountName">
+                                                            <rect key="frame" x="0.0" y="82.666666666666671" width="77.666666666666671" height="20.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hesap Tipi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubK-kz-WsH" userLabel="AccountType">
+                                                            <rect key="frame" x="0.0" y="123.99999999999999" width="81" height="20.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bakiye" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZG-e0-FNa" userLabel="Balance">
+                                                            <rect key="frame" x="0.0" y="165.33333333333334" width="50.333333333333336" height="20.333333333333343"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="hv6-bo-7ny" firstAttribute="centerX" secondItem="teh-Ql-8MK" secondAttribute="centerX" id="X7k-dG-llG"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="336" height="203"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AbV-m8-HKq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8cc-Li-lWh"/>
+                    <navigationItem key="navigationItem" title="Dashboard" id="8cc-Li-lWh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lh-az-zEO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3536.6412213740455" y="-501.4084507042254"/>
+            <point key="canvasLocation" x="5388.5496183206105" y="-576.05633802816908"/>
         </scene>
         <!--CreateAccountViewContoller-->
         <scene sceneID="rXa-ny-eJ9">
@@ -499,7 +555,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dgd-Lm-GtE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4463.3587786259541" y="1507.7464788732395"/>
+            <point key="canvasLocation" x="5390" y="1508"/>
         </scene>
         <!--TransactionHistoryViewController-->
         <scene sceneID="vK1-JT-Zoa">
@@ -719,7 +775,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Kg-B3-ZNY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3536.6412213740455" y="765.49295774647896"/>
+            <point key="canvasLocation" x="4463" y="765"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XLn-mG-Fnj">
@@ -727,7 +783,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MOf-12-CRO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Exa-xP-TEy">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="104.33333333333334"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -737,7 +793,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JWY-Ew-92q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3536.6412213740455" y="1507.7464788732395"/>
+            <point key="canvasLocation" x="4492" y="1508"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cZz-5k-EM6">
@@ -757,8 +813,27 @@
             </objects>
             <point key="canvasLocation" x="4463.3587786259541" y="133.80281690140845"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eTP-lu-ova">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VgN-Pp-TVc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Pmm-HA-M3L">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hJZ-Ww-RKO" kind="relationship" relationship="rootViewController" id="4Em-9u-mIU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IPa-aA-u2t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4462" y="-576"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="05u-ti-gZh"/>
         <segue reference="Np2-op-LK2"/>
         <segue reference="btL-X1-FPK"/>
     </inferredMetricsTieBreakers>
