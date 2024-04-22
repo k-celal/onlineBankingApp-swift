@@ -14,5 +14,9 @@ class DashboardCellsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var account_Type: UILabel!
     @IBOutlet weak var balance: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
     
 }
