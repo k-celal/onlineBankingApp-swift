@@ -43,6 +43,7 @@
 		C9A8C2992BAE0A0E004761B8 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C2982BAE0A0E004761B8 /* ApiClient.swift */; };
 		C9A8C29C2BAE0A46004761B8 /* ApiAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C29B2BAE0A46004761B8 /* ApiAuthService.swift */; };
 		C9A8C29E2BAEE28E004761B8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C29D2BAEE28E004761B8 /* LoginViewController.swift */; };
+		C9AFA1852BD1299F00AAD9AE /* PaymentHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AFA1842BD1299F00AAD9AE /* PaymentHistoryViewController.swift */; };
 		C9EEBF502BBC41A500A9C930 /* CreateAccountRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEBF4F2BBC41A500A9C930 /* CreateAccountRequestModel.swift */; };
 		C9EEBF522BBC420E00A9C930 /* ApiPostTransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEBF512BBC420E00A9C930 /* ApiPostTransactionService.swift */; };
 		C9EEBF542BBC439C00A9C930 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEBF532BBC439C00A9C930 /* AuthenticationError.swift */; };
@@ -108,6 +109,7 @@
 		C9A8C2982BAE0A0E004761B8 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		C9A8C29B2BAE0A46004761B8 /* ApiAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAuthService.swift; sourceTree = "<group>"; };
 		C9A8C29D2BAEE28E004761B8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C9AFA1842BD1299F00AAD9AE /* PaymentHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryViewController.swift; sourceTree = "<group>"; };
 		C9EEBF4F2BBC41A500A9C930 /* CreateAccountRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequestModel.swift; sourceTree = "<group>"; };
 		C9EEBF512BBC420E00A9C930 /* ApiPostTransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPostTransactionService.swift; sourceTree = "<group>"; };
 		C9EEBF532BBC439C00A9C930 /* AuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				C99C27732BB8269400E34028 /* MenuViewController.swift */,
 				C9EEBF572BBC44DC00A9C930 /* CreateAccountViewController.swift */,
 				C98B57BB2BC03E6600657CEF /* TransactionHistoryViewController.swift */,
+				C9AFA1842BD1299F00AAD9AE /* PaymentHistoryViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				C9A8C2942BAE09A4004761B8 /* ApiAuthException.swift in Sources */,
 				C99C27742BB8269400E34028 /* MenuViewController.swift in Sources */,
 				C9EEBF522BBC420E00A9C930 /* ApiPostTransactionService.swift in Sources */,
+				C9AFA1852BD1299F00AAD9AE /* PaymentHistoryViewController.swift in Sources */,
 				C99594CD2BB031E700C1C300 /* RegisterResponseModel.swift in Sources */,
 				C9A8C2522BADBF72004761B8 /* SceneDelegate.swift in Sources */,
 				C98B57BC2BC03E6600657CEF /* TransactionHistoryViewController.swift in Sources */,
