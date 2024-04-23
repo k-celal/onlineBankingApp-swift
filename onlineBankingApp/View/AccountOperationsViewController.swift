@@ -32,15 +32,15 @@ class AccountOperationsViewController: UIViewController {
         accountType.text = "Hesap Türü: \(account.accountType)"
         accountBalance.text = "Bakiye: \(account.balance)"
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "depositMoneySegue" {
+            // Hedef view controller'ı al
+            guard let destinationVC = segue.destination as? DepositMoneyViewController else {
+                return
+            }
+            // Account ID'yi DepositMoneyViewController'a aktar
+            destinationVC.accountID = selectedAccount?.accountId
+            }
+        }
     }
-    */
-}
 

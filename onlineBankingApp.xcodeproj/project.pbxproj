@@ -48,6 +48,7 @@
 		C9A8C29E2BAEE28E004761B8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8C29D2BAEE28E004761B8 /* LoginViewController.swift */; };
 		C9AFA1852BD1299F00AAD9AE /* PaymentHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AFA1842BD1299F00AAD9AE /* PaymentHistoryViewController.swift */; };
 		C9C071DC2BD7BA1300D28451 /* AccountOperationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C071DB2BD7BA1300D28451 /* AccountOperationsViewController.swift */; };
+		C9C071DE2BD7D39C00D28451 /* DepositMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C071DD2BD7D39C00D28451 /* DepositMoneyViewController.swift */; };
 		C9EEBF502BBC41A500A9C930 /* CreateAccountRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEBF4F2BBC41A500A9C930 /* CreateAccountRequestModel.swift */; };
 		C9EEBF522BBC420E00A9C930 /* ApiPostTransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEBF512BBC420E00A9C930 /* ApiPostTransactionService.swift */; };
 		C9EEBF542BBC439C00A9C930 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEBF532BBC439C00A9C930 /* AuthenticationError.swift */; };
@@ -118,6 +119,7 @@
 		C9A8C29D2BAEE28E004761B8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C9AFA1842BD1299F00AAD9AE /* PaymentHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryViewController.swift; sourceTree = "<group>"; };
 		C9C071DB2BD7BA1300D28451 /* AccountOperationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountOperationsViewController.swift; sourceTree = "<group>"; };
+		C9C071DD2BD7D39C00D28451 /* DepositMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositMoneyViewController.swift; sourceTree = "<group>"; };
 		C9EEBF4F2BBC41A500A9C930 /* CreateAccountRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequestModel.swift; sourceTree = "<group>"; };
 		C9EEBF512BBC420E00A9C930 /* ApiPostTransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPostTransactionService.swift; sourceTree = "<group>"; };
 		C9EEBF532BBC439C00A9C930 /* AuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				C9AFA1842BD1299F00AAD9AE /* PaymentHistoryViewController.swift */,
 				C99A69182BD6AFE000296C13 /* DashboardViewController.swift */,
 				C9C071DB2BD7BA1300D28451 /* AccountOperationsViewController.swift */,
+				C9C071DD2BD7D39C00D28451 /* DepositMoneyViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				C99C27742BB8269400E34028 /* MenuViewController.swift in Sources */,
 				C9EEBF522BBC420E00A9C930 /* ApiPostTransactionService.swift in Sources */,
 				C9AFA1852BD1299F00AAD9AE /* PaymentHistoryViewController.swift in Sources */,
+				C9C071DE2BD7D39C00D28451 /* DepositMoneyViewController.swift in Sources */,
 				C99594CD2BB031E700C1C300 /* RegisterResponseModel.swift in Sources */,
 				C9A8C2522BADBF72004761B8 /* SceneDelegate.swift in Sources */,
 				C98B57BC2BC03E6600657CEF /* TransactionHistoryViewController.swift in Sources */,
