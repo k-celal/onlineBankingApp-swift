@@ -420,7 +420,7 @@
             <objects>
                 <viewController id="hJZ-Ww-RKO" userLabel="DashboardViewController" customClass="DashboardViewController" customModule="onlineBankingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rKr-8b-j5m">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HEX-Oy-3G5">
@@ -892,7 +892,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDZ-r1-d8H" userLabel="Card Background">
-                                <rect key="frame" x="16" y="94.333333333333314" width="361" height="198"/>
+                                <rect key="frame" x="16" y="94.333333333333329" width="361" height="197.66666666666669"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="WE0-Jj-UcW">
                                         <rect key="frame" x="8" y="8" width="81" height="185.66666666666666"/>
@@ -945,26 +945,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="deposit" translatesAutoresizingMaskIntoConstraints="NO" id="8v8-tr-3qD">
-                                <rect key="frame" x="16" y="321" width="158" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deposit" translatesAutoresizingMaskIntoConstraints="NO" id="8v8-tr-3qD">
+                                <rect key="frame" x="16" y="411.66666666666669" width="158.33333333333334" height="128.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="MdI-CS-gEe"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="withdraw" translatesAutoresizingMaskIntoConstraints="NO" id="gDu-Nu-koP">
-                                <rect key="frame" x="220" y="321" width="158" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="withdraw" translatesAutoresizingMaskIntoConstraints="NO" id="gDu-Nu-koP">
+                                <rect key="frame" x="220.33333333333337" y="411.66666666666669" width="157.66666666666663" height="128.00000000000006"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="payment" translatesAutoresizingMaskIntoConstraints="NO" id="pVS-3U-ZiZ">
-                                <rect key="frame" x="219" y="514" width="158" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payment" translatesAutoresizingMaskIntoConstraints="NO" id="pVS-3U-ZiZ">
+                                <rect key="frame" x="219.33333333333337" y="605" width="157.66666666666663" height="128"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="transaction" translatesAutoresizingMaskIntoConstraints="NO" id="oCZ-fu-7hZ">
-                                <rect key="frame" x="16" y="514" width="158" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transaction" translatesAutoresizingMaskIntoConstraints="NO" id="oCZ-fu-7hZ">
+                                <rect key="frame" x="16" y="605" width="158.33333333333334" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="PV3-Qo-rpC"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TP5-Ve-hro">
-                                <rect key="frame" x="46.999999999999993" y="458.33333333333331" width="96.333333333333314" height="34.333333333333314"/>
+                                <rect key="frame" x="46.999999999999993" y="548.66666666666663" width="96.333333333333314" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Para Yatır">
                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
@@ -974,21 +974,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DyI-tx-3nJ">
-                                <rect key="frame" x="253.00000000000003" y="458.33333333333331" width="92.333333333333343" height="34.333333333333314"/>
+                                <rect key="frame" x="253.00000000000003" y="548.66666666666663" width="92.333333333333343" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Para Cek">
                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llF-tL-aee">
-                                <rect key="frame" x="51.666666666666657" y="650.66666666666663" width="87" height="34.333333333333371"/>
+                                <rect key="frame" x="51.666666666666657" y="741" width="87" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Transfer">
                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cd7-Yi-dQF">
-                                <rect key="frame" x="243.00000000000003" y="650.66666666666663" width="112.33333333333334" height="34.333333333333371"/>
+                                <rect key="frame" x="243.00000000000003" y="741" width="112.33333333333334" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Ödeme Yap">
                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
@@ -998,7 +998,7 @@
                         <viewLayoutGuide key="safeArea" id="jDf-2g-25y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="8v8-tr-3qD" firstAttribute="top" secondItem="WDZ-r1-d8H" secondAttribute="bottom" constant="30" id="1Uv-3S-rX0"/>
+                            <constraint firstItem="8v8-tr-3qD" firstAttribute="top" secondItem="WDZ-r1-d8H" secondAttribute="bottom" constant="119.66666666666669" id="1Uv-3S-rX0"/>
                             <constraint firstItem="WDZ-r1-d8H" firstAttribute="trailing" secondItem="92m-2D-fgJ" secondAttribute="trailingMargin" id="9yg-bK-NRg"/>
                             <constraint firstItem="9hn-wc-vq2" firstAttribute="centerX" secondItem="WDZ-r1-d8H" secondAttribute="centerX" id="AfE-ye-SaT"/>
                             <constraint firstItem="DyI-tx-3nJ" firstAttribute="centerX" secondItem="Cd7-Yi-dQF" secondAttribute="centerX" id="B3k-cK-VcA"/>
@@ -1016,9 +1016,9 @@
                             <constraint firstItem="llF-tL-aee" firstAttribute="top" secondItem="oCZ-fu-7hZ" secondAttribute="bottom" constant="8" id="d5Y-De-Q4Z"/>
                             <constraint firstItem="oCZ-fu-7hZ" firstAttribute="top" secondItem="pVS-3U-ZiZ" secondAttribute="top" id="gfN-1b-bFj"/>
                             <constraint firstItem="WDZ-r1-d8H" firstAttribute="leading" secondItem="8v8-tr-3qD" secondAttribute="leading" id="lvP-oN-tML"/>
-                            <constraint firstItem="TP5-Ve-hro" firstAttribute="top" secondItem="8v8-tr-3qD" secondAttribute="bottom" constant="8" id="m7d-Ay-ppy"/>
+                            <constraint firstItem="TP5-Ve-hro" firstAttribute="top" secondItem="8v8-tr-3qD" secondAttribute="bottom" constant="9" id="m7d-Ay-ppy"/>
                             <constraint firstItem="pVS-3U-ZiZ" firstAttribute="leading" secondItem="oCZ-fu-7hZ" secondAttribute="trailing" constant="45" id="mS6-Zf-pKK"/>
-                            <constraint firstItem="jDf-2g-25y" firstAttribute="bottom" secondItem="llF-tL-aee" secondAttribute="bottom" constant="157" id="mqX-mY-p8W"/>
+                            <constraint firstItem="jDf-2g-25y" firstAttribute="bottom" secondItem="llF-tL-aee" secondAttribute="bottom" constant="66.666666666666629" id="mqX-mY-p8W"/>
                             <constraint firstItem="oCZ-fu-7hZ" firstAttribute="top" secondItem="TP5-Ve-hro" secondAttribute="bottom" constant="22" id="nHh-Py-Yfi"/>
                             <constraint firstItem="WDZ-r1-d8H" firstAttribute="top" secondItem="9hn-wc-vq2" secondAttribute="bottom" constant="22" id="oPY-MV-lmK"/>
                             <constraint firstItem="TP5-Ve-hro" firstAttribute="leading" secondItem="jDf-2g-25y" secondAttribute="leading" constant="47" id="pmc-aj-2vJ"/>
@@ -1079,7 +1079,8 @@
                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="hJZ-Ww-RKO" kind="show" identifier="depositMoneyButtonSegue" id="fO1-c7-qYh"/>
+                                    <action selector="depositMoneyButtonTapped:" destination="LJe-hR-m3h" eventType="touchUpInside" id="Le2-5t-hsK"/>
+                                    <segue destination="hJZ-Ww-RKO" kind="presentation" identifier="depositMoneyButtonSegue" modalPresentationStyle="fullScreen" id="fO1-c7-qYh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para Yatırma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXL-Oz-7kw">
@@ -1122,6 +1123,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="k54-Kb-ECl"/>
         <segue reference="fO1-c7-qYh"/>
         <segue reference="Np2-op-LK2"/>
         <segue reference="btL-X1-FPK"/>
