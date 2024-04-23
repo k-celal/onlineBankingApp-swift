@@ -10,6 +10,8 @@ import UIKit
 class DashboardViewController: UIViewController {
     private let apiGetTransactionService = ApiGetTransactionService()
     private var response_data: DashboardResponse? // Placeholder for response
+    var selectedAccount: AccountModel?
+    @IBOutlet weak var totalBalance: UILabel!
     @IBOutlet weak var dashboardCollectionView: UICollectionView!
     override func viewDidLoad() {
             super.viewDidLoad()
@@ -23,7 +25,17 @@ class DashboardViewController: UIViewController {
             // Fetch dashboard data
             fetchDashboardData()
         }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "accountOperationSegue" {
+            // Hedef view controller'ı al
+            guard let destinationVC = segue.destination as? AccountOperationsViewController else {
+                return
+            }
+            
+            // Seçilen hesabı aktar
+            destinationVC.selectedAccount = selectedAccount
+        }
+    }
         private func fetchDashboardData() {
             apiGetTransactionService.getDashboard { [weak self] result in
                 guard let self = self else { return }
@@ -33,6 +45,9 @@ class DashboardViewController: UIViewController {
                     self.response_data = dashboardResponse
                     DispatchQueue.main.async {
                         self.dashboardCollectionView.reloadData()
+                        if let totalBalance = self.response_data?.totalBalance {
+                                            self.totalBalance.text = "Toplam Bakiye: \(totalBalance)"
+                                        }
                     }
                 case .failure(let error):
                     print(error.localizedDescription)
@@ -79,7 +94,7 @@ class DashboardViewController: UIViewController {
             guard let account = response_data?.userAccounts[indexPath.item] else {
                 return cell
             }
-
+            selectedAccount = account
             // Configure the cell with account data
             cell.account_ID.text = "Account ID: \(account.accountId)"
             cell.account_no.text = "Account Number: \(account.accountNumber)"
