@@ -1127,7 +1127,7 @@
         <!--WithdrawViewController-->
         <scene sceneID="Wkg-eX-4wU">
             <objects>
-                <viewController id="QUj-f9-pCw" userLabel="WithdrawViewController" sceneMemberID="viewController">
+                <viewController id="QUj-f9-pCw" userLabel="WithdrawViewController" customClass="WithdrawMoneyViewController" customModule="onlineBankingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5MO-pS-eOF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1163,6 +1163,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="depositMoneyButtonTapped:" destination="LJe-hR-m3h" eventType="touchUpInside" id="HM1-zW-wCa"/>
+                                    <action selector="withrawMoneyButtonTapped:" destination="QUj-f9-pCw" eventType="touchUpInside" id="176-T4-nsN"/>
                                     <segue destination="hJZ-Ww-RKO" kind="presentation" identifier="withdrawMoneyButtonSegue" modalPresentationStyle="fullScreen" id="iyp-pb-gBw"/>
                                 </connections>
                             </button>
@@ -1205,6 +1206,9 @@
                             <constraint firstItem="Duh-XQ-ZPn" firstAttribute="top" secondItem="dwb-uS-DM2" secondAttribute="bottom" constant="43" id="xgX-wi-Pn1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="withdrawMoneyField" destination="U33-VN-zhA" id="kAG-8s-AhV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qW6-rO-TuO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

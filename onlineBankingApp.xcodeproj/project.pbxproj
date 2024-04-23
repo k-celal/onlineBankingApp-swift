@@ -51,6 +51,7 @@
 		C9C071DE2BD7D39C00D28451 /* DepositMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C071DD2BD7D39C00D28451 /* DepositMoneyViewController.swift */; };
 		C9C071E02BD7DBA100D28451 /* DepositResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C071DF2BD7DBA100D28451 /* DepositResponseModel.swift */; };
 		C9C071E22BD7DBD300D28451 /* DepositRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C071E12BD7DBD300D28451 /* DepositRequestModel.swift */; };
+		C9C071E62BD7EFC100D28451 /* WithdrawMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C071E52BD7EFC100D28451 /* WithdrawMoneyViewController.swift */; };
 		C9EEBF502BBC41A500A9C930 /* CreateAccountRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEBF4F2BBC41A500A9C930 /* CreateAccountRequestModel.swift */; };
 		C9EEBF522BBC420E00A9C930 /* ApiPostTransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEBF512BBC420E00A9C930 /* ApiPostTransactionService.swift */; };
 		C9EEBF542BBC439C00A9C930 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EEBF532BBC439C00A9C930 /* AuthenticationError.swift */; };
@@ -124,6 +125,7 @@
 		C9C071DD2BD7D39C00D28451 /* DepositMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositMoneyViewController.swift; sourceTree = "<group>"; };
 		C9C071DF2BD7DBA100D28451 /* DepositResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositResponseModel.swift; sourceTree = "<group>"; };
 		C9C071E12BD7DBD300D28451 /* DepositRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositRequestModel.swift; sourceTree = "<group>"; };
+		C9C071E52BD7EFC100D28451 /* WithdrawMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawMoneyViewController.swift; sourceTree = "<group>"; };
 		C9EEBF4F2BBC41A500A9C930 /* CreateAccountRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRequestModel.swift; sourceTree = "<group>"; };
 		C9EEBF512BBC420E00A9C930 /* ApiPostTransactionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPostTransactionService.swift; sourceTree = "<group>"; };
 		C9EEBF532BBC439C00A9C930 /* AuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				C99A69182BD6AFE000296C13 /* DashboardViewController.swift */,
 				C9C071DB2BD7BA1300D28451 /* AccountOperationsViewController.swift */,
 				C9C071DD2BD7D39C00D28451 /* DepositMoneyViewController.swift */,
+				C9C071E52BD7EFC100D28451 /* WithdrawMoneyViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				C9A8C2992BAE0A0E004761B8 /* ApiClient.swift in Sources */,
 				C98B57BA2BC03CE800657CEF /* TransactionCellsTableViewCell.swift in Sources */,
 				C9EEBF562BBC43D800A9C930 /* NetworkError.swift in Sources */,
+				C9C071E62BD7EFC100D28451 /* WithdrawMoneyViewController.swift in Sources */,
 				C9C071E02BD7DBA100D28451 /* DepositResponseModel.swift in Sources */,
 				C9C071E22BD7DBD300D28451 /* DepositRequestModel.swift in Sources */,
 				C9EEBF542BBC439C00A9C930 /* AuthenticationError.swift in Sources */,
