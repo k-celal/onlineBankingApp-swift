@@ -979,6 +979,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Para Cek">
                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="QUj-f9-pCw" kind="presentation" id="yGG-fF-DS0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llF-tL-aee">
                                 <rect key="frame" x="51.666666666666657" y="741" width="87" height="34.333333333333371"/>
@@ -1121,10 +1124,95 @@
             </objects>
             <point key="canvasLocation" x="7814.5038167938928" y="-1718.3098591549297"/>
         </scene>
+        <!--WithdrawViewController-->
+        <scene sceneID="Wkg-eX-4wU">
+            <objects>
+                <viewController id="QUj-f9-pCw" userLabel="WithdrawViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5MO-pS-eOF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="withdraw" translatesAutoresizingMaskIntoConstraints="NO" id="Duh-XQ-ZPn">
+                                <rect key="frame" x="43" y="146" width="307" height="267"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Çekmek istediğiniz tutarı giriniz:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYk-jD-fGc">
+                                <rect key="frame" x="73" y="469" width="247" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="eNd-fK-otF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U33-VN-zhA">
+                                <rect key="frame" x="148" y="517" width="97" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="hr2-al-mZV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRP-AS-Rpz">
+                                <rect key="frame" x="167" y="589" width="59" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="xgz-a3-aEP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Çek">
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="depositMoneyButtonTapped:" destination="LJe-hR-m3h" eventType="touchUpInside" id="HM1-zW-wCa"/>
+                                    <segue destination="hJZ-Ww-RKO" kind="presentation" identifier="withdrawMoneyButtonSegue" modalPresentationStyle="fullScreen" id="iyp-pb-gBw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para Çekme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHH-94-WsM">
+                                <rect key="frame" x="148.66666666666666" y="0.0" width="96" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="CxB-J2-txr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Para Çekme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwb-uS-DM2">
+                                <rect key="frame" x="148" y="82" width="96" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hPO-Xa-eej"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dwb-uS-DM2" firstAttribute="centerX" secondItem="pHH-94-WsM" secondAttribute="centerX" id="3Lh-Bu-jzt"/>
+                            <constraint firstItem="Duh-XQ-ZPn" firstAttribute="centerX" secondItem="UYk-jD-fGc" secondAttribute="centerX" id="9zx-c1-4BA"/>
+                            <constraint firstItem="U33-VN-zhA" firstAttribute="centerX" secondItem="YRP-AS-Rpz" secondAttribute="centerX" id="E7q-YS-Owg"/>
+                            <constraint firstItem="pHH-94-WsM" firstAttribute="centerX" secondItem="Duh-XQ-ZPn" secondAttribute="centerX" id="FkP-Km-GBk"/>
+                            <constraint firstItem="U33-VN-zhA" firstAttribute="top" secondItem="UYk-jD-fGc" secondAttribute="bottom" constant="27" id="OtC-Fh-uBh"/>
+                            <constraint firstItem="UYk-jD-fGc" firstAttribute="centerX" secondItem="5MO-pS-eOF" secondAttribute="centerX" id="PFb-ad-uk7"/>
+                            <constraint firstItem="YRP-AS-Rpz" firstAttribute="top" secondItem="U33-VN-zhA" secondAttribute="bottom" constant="38" id="PVj-f4-iky"/>
+                            <constraint firstItem="hPO-Xa-eej" firstAttribute="bottom" secondItem="YRP-AS-Rpz" secondAttribute="bottom" constant="218" id="PaA-VM-y5n"/>
+                            <constraint firstItem="Duh-XQ-ZPn" firstAttribute="leading" secondItem="hPO-Xa-eej" secondAttribute="leading" constant="43" id="TBr-Ih-kjU"/>
+                            <constraint firstItem="UYk-jD-fGc" firstAttribute="top" secondItem="Duh-XQ-ZPn" secondAttribute="bottom" constant="56" id="bPd-xI-jyz"/>
+                            <constraint firstItem="YRP-AS-Rpz" firstAttribute="leading" secondItem="hPO-Xa-eej" secondAttribute="leading" constant="167" id="geB-Dm-Va7"/>
+                            <constraint firstItem="dwb-uS-DM2" firstAttribute="leading" secondItem="U33-VN-zhA" secondAttribute="leading" id="kVg-FU-02I"/>
+                            <constraint firstItem="Duh-XQ-ZPn" firstAttribute="top" secondItem="pHH-94-WsM" secondAttribute="bottom" constant="125" id="o0M-iN-yWs"/>
+                            <constraint firstItem="UYk-jD-fGc" firstAttribute="centerX" secondItem="U33-VN-zhA" secondAttribute="centerX" id="qXq-LW-eJn"/>
+                            <constraint firstItem="UYk-jD-fGc" firstAttribute="leading" secondItem="hPO-Xa-eej" secondAttribute="leading" constant="73" id="tev-sV-PhQ"/>
+                            <constraint firstItem="U33-VN-zhA" firstAttribute="leading" secondItem="hPO-Xa-eej" secondAttribute="leading" constant="148" id="vQF-xg-VK1"/>
+                            <constraint firstItem="pHH-94-WsM" firstAttribute="top" secondItem="hPO-Xa-eej" secondAttribute="top" id="x0f-T6-qnT"/>
+                            <constraint firstItem="Duh-XQ-ZPn" firstAttribute="top" secondItem="dwb-uS-DM2" secondAttribute="bottom" constant="43" id="xgX-wi-Pn1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qW6-rO-TuO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7815" y="-863"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="k54-Kb-ECl"/>
-        <segue reference="fO1-c7-qYh"/>
+        <segue reference="iyp-pb-gBw"/>
         <segue reference="Np2-op-LK2"/>
         <segue reference="btL-X1-FPK"/>
     </inferredMetricsTieBreakers>
