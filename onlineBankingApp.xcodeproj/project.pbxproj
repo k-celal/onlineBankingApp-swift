@@ -13,6 +13,7 @@
 		C925933C2BCD8E8500763612 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C925933B2BCD8E8500763612 /* Payment.swift */; };
 		C92B16552BDBDBCF007835EC /* PaymentRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B16542BDBDBCF007835EC /* PaymentRequestModel.swift */; };
 		C92B16572BDBDBE4007835EC /* PaymentResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B16562BDBDBE4007835EC /* PaymentResponseModel.swift */; };
+		C92B165B2BDBDFBC007835EC /* PaymentMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B165A2BDBDFBC007835EC /* PaymentMoneyViewController.swift */; };
 		C94804022BB7019900562D29 /* ExchangeRatesApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804012BB7019900562D29 /* ExchangeRatesApiClient.swift */; };
 		C94804042BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804032BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift */; };
 		C94804062BB702DC00562D29 /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804052BB702DC00562D29 /* CurrencyResponse.swift */; };
@@ -86,6 +87,7 @@
 		C925933B2BCD8E8500763612 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		C92B16542BDBDBCF007835EC /* PaymentRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRequestModel.swift; sourceTree = "<group>"; };
 		C92B16562BDBDBE4007835EC /* PaymentResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResponseModel.swift; sourceTree = "<group>"; };
+		C92B165A2BDBDFBC007835EC /* PaymentMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaymentMoneyViewController.swift; path = onlineBankingApp/View/PaymentMoneyViewController.swift; sourceTree = SOURCE_ROOT; };
 		C94804012BB7019900562D29 /* ExchangeRatesApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesApiClient.swift; sourceTree = "<group>"; };
 		C94804032BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesApiServiceInterface.swift; sourceTree = "<group>"; };
 		C94804052BB702DC00562D29 /* CurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResponse.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 				C9C071DB2BD7BA1300D28451 /* AccountOperationsViewController.swift */,
 				C9C071DD2BD7D39C00D28451 /* DepositMoneyViewController.swift */,
 				C9C071E52BD7EFC100D28451 /* WithdrawMoneyViewController.swift */,
+				C92B165A2BDBDFBC007835EC /* PaymentMoneyViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				C9A8C2942BAE09A4004761B8 /* ApiAuthException.swift in Sources */,
 				C99C27742BB8269400E34028 /* MenuViewController.swift in Sources */,
 				C9EEBF522BBC420E00A9C930 /* ApiPostTransactionService.swift in Sources */,
+				C92B165B2BDBDFBC007835EC /* PaymentMoneyViewController.swift in Sources */,
 				C9AFA1852BD1299F00AAD9AE /* PaymentHistoryViewController.swift in Sources */,
 				C92B16552BDBDBCF007835EC /* PaymentRequestModel.swift in Sources */,
 				C9C071DE2BD7D39C00D28451 /* DepositMoneyViewController.swift in Sources */,

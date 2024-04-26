@@ -53,4 +53,4 @@ class DepositMoneyViewController: UIViewController {
             }
         }
     }
-    }
+}

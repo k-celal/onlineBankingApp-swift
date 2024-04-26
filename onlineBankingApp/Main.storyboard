@@ -418,7 +418,7 @@
             <objects>
                 <viewController id="hJZ-Ww-RKO" userLabel="DashboardViewController" customClass="DashboardViewController" customModule="onlineBankingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rKr-8b-j5m">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HEX-Oy-3G5">
@@ -1011,6 +1011,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Ödeme Yap">
                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Xx3-e3-E0i" kind="presentation" identifier="paymentMoneySegue" id="QHX-hF-W4t"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jDf-2g-25y"/>
@@ -1217,16 +1220,16 @@
             </objects>
             <point key="canvasLocation" x="7814.5038167938928" y="-863.38028169014092"/>
         </scene>
-        <!--PaymenyViewController-->
+        <!--PaymentViewController-->
         <scene sceneID="bBa-B8-z0m">
             <objects>
-                <viewController id="Xx3-e3-E0i" userLabel="PaymenyViewController" sceneMemberID="viewController">
+                <viewController id="Xx3-e3-E0i" userLabel="PaymentViewController" customClass="PaymentMoneyViewController" customModule="onlineBankingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y25-aX-a4V">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para Yatırma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0o-fA-ief">
-                                <rect key="frame" x="146" y="95" width="101" height="21"/>
+                                <rect key="frame" x="146" y="36" width="101" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="3qB-5p-mDe"/>
                                 </constraints>
@@ -1247,34 +1250,34 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PU1-AW-YWK">
-                                <rect key="frame" x="151" y="409" width="97" height="34"/>
+                                <rect key="frame" x="151" y="404" width="97" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abonelik numaranız:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uP1-WK-9g4">
-                                <rect key="frame" x="122" y="468" width="155" height="21"/>
+                                <rect key="frame" x="122" y="463" width="155" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ulo-el-zVn">
-                                <rect key="frame" x="154" y="497" width="97" height="34"/>
+                                <rect key="frame" x="154" y="492" width="97" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ödenecek miktar:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDg-wH-17V">
-                                <rect key="frame" x="135" y="564" width="135" height="21"/>
+                                <rect key="frame" x="135" y="559" width="135" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i2J-11-qcK">
-                                <rect key="frame" x="154" y="593" width="97" height="34"/>
+                                <rect key="frame" x="154" y="588" width="97" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Açıklama:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ylj-xZ-9m6">
-                                <rect key="frame" x="163" y="648" width="73" height="21"/>
+                                <rect key="frame" x="163" y="643" width="73" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1285,11 +1288,15 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ac6-Mi-4ng">
-                                <rect key="frame" x="146" y="745" width="113" height="35"/>
+                                <rect key="frame" x="146" y="740" width="113" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Ödeme Yap">
                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="paymentMoneyButtonTapped:" destination="Xx3-e3-E0i" eventType="touchUpInside" id="q8c-3y-MSN"/>
+                                    <segue destination="hJZ-Ww-RKO" kind="show" id="Q8P-6D-uNh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="omv-Qd-qqo"/>
@@ -1326,6 +1333,12 @@
                             <constraint firstItem="tnL-Gg-SJ0" firstAttribute="top" secondItem="JyQ-mq-mtE" secondAttribute="bottom" constant="64" id="ydd-0y-ucw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="aboneNo" destination="Ulo-el-zVn" id="Adf-3s-vUU"/>
+                        <outlet property="beneficary" destination="PU1-AW-YWK" id="Uac-FQ-cNM"/>
+                        <outlet property="paymentAmount" destination="i2J-11-qcK" id="ZIe-3r-aa9"/>
+                        <outlet property="reference" destination="CgV-aW-0ez" id="Kwt-3B-Jgh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PTR-iP-pcy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1333,7 +1346,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fO1-c7-qYh"/>
+        <segue reference="QHX-hF-W4t"/>
+        <segue reference="Q8P-6D-uNh"/>
         <segue reference="LIQ-8m-2Dn"/>
         <segue reference="KMd-3I-VYn"/>
     </inferredMetricsTieBreakers>

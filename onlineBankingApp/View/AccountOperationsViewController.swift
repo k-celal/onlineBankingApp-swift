@@ -49,7 +49,13 @@ class AccountOperationsViewController: UIViewController {
             // Account ID'yi DepositMoneyViewController'a aktar
             destinationVC.accountID = selectedAccount?.accountId
             }
-
+        if segue.identifier == "paymentMoneySegue" {
+            // Hedef view controller'ı al
+            guard let destinationVC = segue.destination as? PaymentMoneyViewController else {
+                return
+            }
+            destinationVC.accountId = selectedAccount?.accountId
+            }
         }
 
     }
