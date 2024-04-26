@@ -89,10 +89,10 @@ class ApiPostTransactionService {
         request.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
         
         // Request body oluştur
-        let createAccountRequestModel = DepositRequestModel(accountId: accountId, depositAmount: depositAmount)
+        let depositRequestModel = DepositRequestModel(accountId: accountId, depositAmount: depositAmount)
         do {
             let encoder = JSONEncoder()
-            request.httpBody = try encoder.encode(createAccountRequestModel)
+            request.httpBody = try encoder.encode(depositRequestModel)
         } catch {
             completion(.failure(NetworksError.serializationError))
             return

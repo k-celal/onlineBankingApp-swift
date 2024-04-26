@@ -33,6 +33,14 @@ class AccountOperationsViewController: UIViewController {
         accountBalance.text = "Bakiye: \(account.balance)"
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "withdrawMoneySegue" {
+            // Hedef view controller'ı al
+            guard let destinationVC = segue.destination as? WithdrawMoneyViewController else {
+                return
+            }
+            // Account ID'yi DepositMoneyViewController'a aktar
+            destinationVC.accountId = selectedAccount?.accountId
+            }
         if segue.identifier == "depositMoneySegue" {
             // Hedef view controller'ı al
             guard let destinationVC = segue.destination as? DepositMoneyViewController else {
@@ -41,6 +49,8 @@ class AccountOperationsViewController: UIViewController {
             // Account ID'yi DepositMoneyViewController'a aktar
             destinationVC.accountID = selectedAccount?.accountId
             }
+
         }
+
     }
 

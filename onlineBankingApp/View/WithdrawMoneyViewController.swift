@@ -8,22 +8,51 @@
 import UIKit
 
 class WithdrawMoneyViewController: UIViewController {
-    var AccountId: Int?
+    var accountId: Int?
     @IBOutlet weak var withdrawMoneyField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+
     }
     
     @IBAction func withrawMoneyButtonTapped(_ sender: UIButton) {
+        guard let amountString = withdrawMoneyField.text else {
+            showToast(message: "Lütfen bir miktar girin.")
+            return
+        }
         
+        // Sayısal kontrol
+        guard let withdrawAmount = Double(amountString) else {
+            showToast(message: "Lütfen geçerli bir miktar girin.")
+            return
+        }
+        
+        // API isteği
+        let apiService = ApiPostTransactionService()
+        apiService.withdrawMoney(accountId: "\(accountId ?? 0)", withdrawAmount: "\(withdrawAmount)") { result in
+            switch result {
+            case .success(let response):
+                DispatchQueue.main.async {
+                    // API'den dönen mesajı ekrana bastır
+                    self.showToast(message: response.message)
+                }
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    self.showToast(message: error.localizedDescription)
+                }
+            }
+        }
     }
     
-    func showAlert(message: String) {
-        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Tamam", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil)
+    func showToast(message: String, completion: (() -> Void)? = nil) {
+        let toast = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        present(toast, animated: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            toast.dismiss(animated: true) {
+                completion?() // completion bloğunu kontrol ediyoruz ve varsa çağırıyoruz
+            }
+        }
     }
 
 }
