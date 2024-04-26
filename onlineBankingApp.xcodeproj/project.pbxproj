@@ -14,6 +14,8 @@
 		C92B16552BDBDBCF007835EC /* PaymentRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B16542BDBDBCF007835EC /* PaymentRequestModel.swift */; };
 		C92B16572BDBDBE4007835EC /* PaymentResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B16562BDBDBE4007835EC /* PaymentResponseModel.swift */; };
 		C92B165B2BDBDFBC007835EC /* PaymentMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B165A2BDBDFBC007835EC /* PaymentMoneyViewController.swift */; };
+		C92B165D2BDC02CE007835EC /* TransferRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B165C2BDC02CE007835EC /* TransferRequestModel.swift */; };
+		C92B165F2BDC02DF007835EC /* TransferResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B165E2BDC02DF007835EC /* TransferResponseModel.swift */; };
 		C94804022BB7019900562D29 /* ExchangeRatesApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804012BB7019900562D29 /* ExchangeRatesApiClient.swift */; };
 		C94804042BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804032BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift */; };
 		C94804062BB702DC00562D29 /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94804052BB702DC00562D29 /* CurrencyResponse.swift */; };
@@ -88,6 +90,8 @@
 		C92B16542BDBDBCF007835EC /* PaymentRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRequestModel.swift; sourceTree = "<group>"; };
 		C92B16562BDBDBE4007835EC /* PaymentResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResponseModel.swift; sourceTree = "<group>"; };
 		C92B165A2BDBDFBC007835EC /* PaymentMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaymentMoneyViewController.swift; path = onlineBankingApp/View/PaymentMoneyViewController.swift; sourceTree = SOURCE_ROOT; };
+		C92B165C2BDC02CE007835EC /* TransferRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferRequestModel.swift; sourceTree = "<group>"; };
+		C92B165E2BDC02DF007835EC /* TransferResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferResponseModel.swift; sourceTree = "<group>"; };
 		C94804012BB7019900562D29 /* ExchangeRatesApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesApiClient.swift; sourceTree = "<group>"; };
 		C94804032BB7023300562D29 /* ExchangeRatesApiServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesApiServiceInterface.swift; sourceTree = "<group>"; };
 		C94804052BB702DC00562D29 /* CurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResponse.swift; sourceTree = "<group>"; };
@@ -284,6 +288,7 @@
 				C9C071E12BD7DBD300D28451 /* DepositRequestModel.swift */,
 				C9C071E72BD7F0D500D28451 /* WithdrawRequestModel.swift */,
 				C92B16542BDBDBCF007835EC /* PaymentRequestModel.swift */,
+				C92B165C2BDC02CE007835EC /* TransferRequestModel.swift */,
 			);
 			path = requestModel;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				C9C071DF2BD7DBA100D28451 /* DepositResponseModel.swift */,
 				C9C071E92BD7F12800D28451 /* WithdrawResponseModel.swift */,
 				C92B16562BDBDBE4007835EC /* PaymentResponseModel.swift */,
+				C92B165E2BDC02DF007835EC /* TransferResponseModel.swift */,
 			);
 			path = responseModel;
 			sourceTree = "<group>";
@@ -511,6 +517,7 @@
 				C9A8C2902BAE0895004761B8 /* ApiServiceInterface.swift in Sources */,
 				C99A691E2BD6B18D00296C13 /* DashboardResponseModel.swift in Sources */,
 				C9EEBF582BBC44DC00A9C930 /* CreateAccountViewController.swift in Sources */,
+				C92B165F2BDC02DF007835EC /* TransferResponseModel.swift in Sources */,
 				C9C071DC2BD7BA1300D28451 /* AccountOperationsViewController.swift in Sources */,
 				C9A8C2942BAE09A4004761B8 /* ApiAuthException.swift in Sources */,
 				C99C27742BB8269400E34028 /* MenuViewController.swift in Sources */,
@@ -528,6 +535,7 @@
 				C9A8C2992BAE0A0E004761B8 /* ApiClient.swift in Sources */,
 				C98B57BA2BC03CE800657CEF /* TransactionCellsTableViewCell.swift in Sources */,
 				C9EEBF562BBC43D800A9C930 /* NetworkError.swift in Sources */,
+				C92B165D2BDC02CE007835EC /* TransferRequestModel.swift in Sources */,
 				C9C071E62BD7EFC100D28451 /* WithdrawMoneyViewController.swift in Sources */,
 				C9C071E02BD7DBA100D28451 /* DepositResponseModel.swift in Sources */,
 				C9C071E22BD7DBD300D28451 /* DepositRequestModel.swift in Sources */,
