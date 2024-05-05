@@ -17,6 +17,17 @@ class DashboardCellsCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        // Hücrenin köşe yarıçapını ayarla
+        contentView.layer.cornerRadius = 20  // İstediğiniz köşe yarıçapını buraya yazabilirsiniz
+        contentView.layer.masksToBounds = true
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.path = UIBezierPath(roundedRect: contentView.bounds,
+                                        byRoundingCorners: [.bottomLeft, .bottomRight],
+                                        cornerRadii: CGSize(width: 20, height: 20)).cgPath
+        contentView.layer.mask = shapeLayer
+        
+        
     }
+    
     
 }

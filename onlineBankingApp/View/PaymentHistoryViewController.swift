@@ -47,7 +47,6 @@ class PaymentHistoryViewController: UIViewController {
         
         paymentHistoryTable.delegate = self
         paymentHistoryTable.dataSource = self
-        paymentHistoryTable.register(PaymentHistoryCellsTableViewCell.self, forCellReuseIdentifier: "raymentCell")
         // Call the API service to get transaction history
         apiGetTransactionService.getPaymentHistory { [weak self] result in
             guard let self = self else { return }
@@ -75,15 +74,10 @@ extension PaymentHistoryViewController: UITableViewDelegate, UITableViewDataSour
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "paymentCell", for: indexPath) as? PaymentHistoryCellsTableViewCell else {
             fatalError("Failed to dequeue a reusable cell.")
         }
-        
         guard let payment = response_data?.paymentHistory[indexPath.row] else {
             return cell
         }
-        
         let createdAtString = formatIntArrayToDate(payment.createdAt, format: "dd/MM/yyyy HH:mm:ss")
-
-
-
         cell.t_date.text = createdAtString
         cell.t_status.text = payment.status
         cell.t_amount.text = "\(payment.amount)"

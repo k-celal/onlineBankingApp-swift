@@ -23,7 +23,7 @@ class MenuViewController: BaseViewController {
     }
     
     @IBAction func viewDashboardTapped(_ sender: UIButton) {
-        performSegue(withIdentifier: "menuToDashboardSegue", sender: nil)
+        
     }
     
     @IBAction func paymentHistoryTapped(_ sender: UIButton) {
