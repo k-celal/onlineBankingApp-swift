@@ -76,14 +76,13 @@ extension TransactionHistoryViewController: UITableViewDelegate, UITableViewData
         guard let transaction = response_data?.transactionHistory[indexPath.row] else {
             return cell
         }
-        let createdAtString = formatIntArrayToDate(transaction.createdAt, format: "dd/MM/yyyy HH:mm:ss")
-        // Configure the cell with transaction data
-        cell.t_date.text = createdAtString
-        cell.t_status.text = transaction.status
-        cell.t_amount.text = "\(transaction.amount)"
-        cell.t_type.text = transaction.transactionType
-        cell.t_hesaNo.text = transaction.source
-        cell.t_id.text = "\(transaction.transactionID)"
+        let  createdAtString = formatIntArrayToDate(transaction.createdAt, format: "dd/MM/yyyy HH:mm:ss")
+        cell.t_date.text = "Tarih: \(createdAtString)"
+        cell.t_status.text = "Durum: \(transaction.status)"
+        cell.t_amount.text = "Miktar: \(transaction.amount)"
+        cell.t_type.text = "Tür: \(transaction.transactionType)"
+        cell.t_hesaNo.text = "Hesap Numarası: \(transaction.source)"
+        cell.t_id.text = "İşlem ID: \(transaction.transactionID)"
         return cell
     }
 }
