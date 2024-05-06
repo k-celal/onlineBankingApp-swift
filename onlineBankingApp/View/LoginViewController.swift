@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
     }
     
     func handleLoginSuccess() {
-        showToast(message: "Login successful") {
+        showToast(message: "Giris Basarili") {
             self.performSegue(withIdentifier: "loginToMenuSegue", sender: nil)
         }
     }
@@ -44,7 +44,7 @@ class LoginViewController: UIViewController {
         if let apiError = error as? ApiAuthException {
             showToast(message: apiError.localizedDescription)
         } else {
-            showToast(message: "Login failed. Please try again.")
+            showToast(message: "Giris Basarisiz, Lutfen tekrar deneyin.")
         }
         print("Login error: \(error.localizedDescription)")
     }
