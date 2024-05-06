@@ -12,8 +12,8 @@ class WithdrawMoneyViewController: UIViewController {
     @IBOutlet weak var withdrawMoneyField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        
+        
     }
     
     @IBAction func withrawMoneyButtonTapped(_ sender: UIButton) {
@@ -35,7 +35,11 @@ class WithdrawMoneyViewController: UIViewController {
             case .success(let response):
                 DispatchQueue.main.async {
                     // API'den dönen mesajı ekrana bastır
-                    self.showToast(message: response.message)
+                    self.showToast(message: response.message){
+                        self.performSegue(withIdentifier: "withdrawtoMain", sender: nil)
+                    }
+                    
+                    
                 }
             case .failure(let error):
                 DispatchQueue.main.async {
@@ -53,6 +57,5 @@ class WithdrawMoneyViewController: UIViewController {
                 completion?() // completion bloğunu kontrol ediyoruz ve varsa çağırıyoruz
             }
         }
-    }
-
+    }    
 }
