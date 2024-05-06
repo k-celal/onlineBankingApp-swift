@@ -48,7 +48,7 @@ class RegisterViewController: UIViewController {
     }
 
     func handleRegistrationSuccess() {
-        showToast(message: "Registration successful. Please check your email \(String(describing: emailTextField.text)) to confirm your account." ) {
+        showToast(message: "Kayıt işlemi başarılı, Onay için mail kontrolunu unutmayin! :) \(String(describing: emailTextField.text)) to confirm your account." ) {
             // Sunum tamamlandığında yapılacak işlemler burada olacak
             self.performSegue(withIdentifier: "registerToLoginSegue", sender: nil)
             print("Yönlendirme")
@@ -56,7 +56,7 @@ class RegisterViewController: UIViewController {
     }
 
     func handleRegistrationFailure(error: Error) {
-        showToast(message: "Registration failed. Please try again.")
+        showToast(message: "Kayit Basarisiz, lutfen sonra tekrar deneyin.")
         print("Registration error: \(error.localizedDescription)")
     }
 
