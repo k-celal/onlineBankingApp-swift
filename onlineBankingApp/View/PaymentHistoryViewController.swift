@@ -78,13 +78,13 @@ extension PaymentHistoryViewController: UITableViewDelegate, UITableViewDataSour
             return cell
         }
         let createdAtString = formatIntArrayToDate(payment.createdAt, format: "dd/MM/yyyy HH:mm:ss")
-        cell.t_date.text = createdAtString
-        cell.t_status.text = payment.status
-        cell.t_amount.text = "\(payment.amount)"
-        cell.t_abonelik.text = payment.beneficiary
-        cell.t_hesaNo.text = "\(payment.accountID)"
-        cell.t_id.text = "\(payment.paymentID)"
-        cell.t_aboneNo.text = "\(payment.beneficiaryAccNo)"
+        cell.t_date.text = "Oluşturulma Tarihi: \(createdAtString)"
+        cell.t_status.text = "Durum: \(payment.status)"
+        cell.t_amount.text = "Miktar: \(payment.amount)"
+        cell.t_abonelik.text = "Alıcı: \(payment.beneficiary)"
+        cell.t_hesaNo.text = "Hesap Numarası: \(payment.accountID)"
+        cell.t_id.text = "Ödeme ID: \(payment.paymentID)"
+        cell.t_aboneNo.text = "Alıcı Hesap Numarası: \(payment.beneficiaryAccNo)"
         return cell
     }
     
