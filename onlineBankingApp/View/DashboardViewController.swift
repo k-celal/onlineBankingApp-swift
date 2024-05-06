@@ -7,12 +7,13 @@
 
 import UIKit
 
-class DashboardViewController: UIViewController {
+class DashboardViewController: BaseViewController {
     private let apiGetTransactionService = ApiGetTransactionService()
     private var response_data: DashboardResponse? // Placeholder for response
     var selectedAccount: AccountModel?
     @IBOutlet weak var totalBalance: UILabel!
     @IBOutlet weak var dashboardCollectionView: UICollectionView!
+    @IBOutlet weak var logout: UIButton!
     override func viewDidLoad() {
             super.viewDidLoad()
 
@@ -55,6 +56,35 @@ class DashboardViewController: UIViewController {
                 }
             }
         }
+    @IBAction func logoutButtonTapped(_ sender: UIButton) {
+        ApiAuthService.logout { error in
+            DispatchQueue.main.async {
+                if let error = error {
+                    // Çıkış işlemi başarısız oldu
+                    print("Logout failed: \(error.localizedDescription)")
+                    // Hata mesajını göster
+                    self.showToast(message: "Cıkıs islemi basarisiz. Lutfen tekrar deneyiniz.")
+                } else {
+                    // Çıkış işlemi başarılı oldu
+                    print("Logout successful")
+                    // Başarılı mesajını göster
+
+                    // Kullanıcıyı giriş ekranına yönlendirin veya başka bir işlem yapın
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    if let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
+                        // Login view controller instance'ını alın
+                        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                           let window = windowScene.windows.first {
+                            // Window üzerindeki root view controller'ı değiştirin
+                            window.rootViewController = loginViewController
+                            // Window'u gösterin
+                            window.makeKeyAndVisible()
+                        }
+                    }
+                }
+            }
+        }
+    }
     @IBAction func nextButtonTapped(_ sender: UIButton) {
             // Mevcut görüntülenen hücrenin indeksini al
             guard let currentIndexPath = dashboardCollectionView.indexPathsForVisibleItems.first else {
@@ -81,6 +111,7 @@ class DashboardViewController: UIViewController {
         }
     }
 
+
     extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             return response_data?.userAccounts.count ?? 0
@@ -96,11 +127,11 @@ class DashboardViewController: UIViewController {
             }
             selectedAccount = account
             // Configure the cell with account data
-            cell.account_ID.text = "Account ID: \(account.accountId)"
-            cell.account_no.text = "Account Number: \(account.accountNumber)"
-            cell.account_Name.text = "Account Name: \(account.accountName)"
-            cell.account_Type.text = "Account Type: \(account.accountType)"
-            cell.balance.text = "Balance: \(account.balance)"
+            cell.account_ID.text = "Hesap ID: \(account.accountId)"
+            cell.account_no.text = "Hesap Numarası: \(account.accountNumber)"
+            cell.account_Name.text = "Hesap Adı: \(account.accountName)"
+            cell.account_Type.text = "Hesap Türü: \(account.accountType)"
+            cell.balance.text = "Bakiye: \(account.balance)"
 
             return cell
         }
@@ -119,4 +150,5 @@ extension DashboardViewController: UICollectionViewDelegateFlowLayout {
         return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10) // Örnek olarak, her yönde 10 piksel iç kenar boşluğu belirliyoruz
     }
 }
+
 
