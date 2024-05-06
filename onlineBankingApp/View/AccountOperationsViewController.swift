@@ -15,9 +15,13 @@ class AccountOperationsViewController: UIViewController {
     @IBOutlet weak var accountNo: UILabel!
     @IBOutlet weak var accountID: UILabel!
     
+    @IBOutlet weak var cellBackground: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Seçilen hesabın bilgilerini göster
+        // cellBackground'a kenar yuvarlaklık (border radius) ekleyin
+           cellBackground.layer.cornerRadius = 20 // İstenilen yuvarlaklık miktarını burada ayarlayabilirsiniz
+           cellBackground.layer.masksToBounds = true // Kenarlığı yuvarlatılan bölgenin dışındaki içeriği göstermeyi etkinleştirin
         showAccountDetails()
     }
     
