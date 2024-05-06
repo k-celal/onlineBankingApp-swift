@@ -32,7 +32,9 @@ class TransferMoneyViewController: UIViewController {
             case .success(let response):
                 DispatchQueue.main.async {
                     // API'den dönen mesajı ekrana bastır
-                    self.showToast(message: response.message)
+                    self.showToast(message: response.message){
+                        self.performSegue(withIdentifier: "transferToMain", sender: nil)
+                    }
                 }
             case .failure(let error):
                 DispatchQueue.main.async {
